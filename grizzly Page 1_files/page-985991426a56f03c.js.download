@@ -1,0 +1,1081 @@
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+  [1931], {
+      88336: function(e, s, i) {
+          Promise.resolve().then(i.bind(i, 68267)), Promise.resolve().then(i.bind(i, 95806)), Promise.resolve().then(i.bind(i, 54897)), Promise.resolve().then(i.bind(i, 75985)), Promise.resolve().then(i.bind(i, 39048)), Promise.resolve().then(i.bind(i, 72534)), Promise.resolve().then(i.bind(i, 40326)), Promise.resolve().then(i.bind(i, 82696)), Promise.resolve().then(i.bind(i, 68699)), Promise.resolve().then(i.bind(i, 36038)), Promise.resolve().then(i.bind(i, 99998)), Promise.resolve().then(i.t.bind(i, 68326, 23))
+      },
+      68267: function(e, s, i) {
+          "use strict";
+          i.r(s);
+          var l = i(57437),
+              a = i(61396),
+              n = i.n(a),
+              c = i(2265),
+              r = i(51729);
+          s.default = () => {
+              let [e, s] = (0, c.useState)(!1), i = e => {
+                  e[0].isIntersecting && s(!0)
+              }, a = (0, c.useRef)(null);
+              return (0, c.useEffect)(() => {
+                  let e = document.querySelector(".counter-box");
+                  return e && (a.current = new IntersectionObserver(i, {
+                      threshold: .5
+                  }), a.current.observe(e)), () => {
+                      a.current && a.current.disconnect()
+                  }
+              }, []), (0, l.jsx)("section", {
+                  className: "tf__about mt_250 xs_mt_195",
+                  children: (0, l.jsxs)("div", {
+                      className: "container",
+                      children: [(0, l.jsx)("div", {
+                          className: "tf__about_top wow fadeInUp",
+                          children: (0, l.jsxs)("div", {
+                              className: "row",
+                              children: [(0, l.jsx)("div", {
+                                  className: "col-xl-5 col-lg-5",
+                                  children: (0, l.jsx)("div", {
+                                      className: "tf__about_top_img",
+                                      children: (0, l.jsx)("img", {
+                                          src: "./grizzly Page 1_files/about_top_img.jpg",
+                                          alt: "about",
+                                          className: "img-fluid w-100"
+                                      })
+                                  })
+                              }), (0, l.jsx)("div", {
+                                  className: "col-xl-7 col-lg-7",
+                                  children: (0, l.jsxs)("div", {
+                                      className: "tf__about_top_text",
+                                      children: [(0, l.jsxs)("div", {
+                                          className: "tf__about_top_text_center",
+                                          children: [(0, l.jsx)("h4", {
+                                              children: "Study Off Flexibly"
+                                          }), (0, l.jsx)("p", {
+                                              children: "We can provide you with a reliable handyan in Please input an email address down below school. Please input anand school. included the today."
+                                          })]
+                                      }), (0, l.jsx)("a", {
+                                          href: "#",
+                                          className: "common_btn",
+                                          children: "read more"
+                                      })]
+                                  })
+                              })]
+                          })
+                      }), (0, l.jsxs)("div", {
+                          className: "row",
+                          children: [(0, l.jsx)("div", {
+                              className: "col-xl-6 col-md-9 col-lg-6 wow fadeInLeft",
+                              children: (0, l.jsxs)("div", {
+                                  className: "tf__about_text",
+                                  children: [(0, l.jsxs)("div", {
+                                      className: "tf__heading_area tf__heading_area_left mb_25",
+                                      children: [(0, l.jsx)("h5", {
+                                          children: "OUR About Us"
+                                      }), (0, l.jsx)("h2", {
+                                          children: "Discover Our Story: Nurturing Growth, Fostering Learning."
+                                      })]
+                                  }), (0, l.jsxs)("p", {
+                                      children: ["Business tailored it design, management & support services business agency elit, sed do eiusmod tempor.", " "]
+                                  }), (0, l.jsxs)("ul", {
+                                      children: [(0, l.jsx)("li", {
+                                          children: "Business school's Institut constructivism."
+                                      }), (0, l.jsx)("li", {
+                                          children: "We give management school best."
+                                      }), (0, l.jsx)("li", {
+                                          children: "Media in this school solution."
+                                      }), (0, l.jsx)("li", {
+                                          children: "Business school's Institut constructivism."
+                                      }), (0, l.jsx)("li", {
+                                          children: "We give management school best."
+                                      })]
+                                  }), (0, l.jsx)(n(), {
+                                      href: "/about",
+                                      className: "common_btn",
+                                      children: "about more"
+                                  })]
+                              })
+                          }), (0, l.jsx)("div", {
+                              className: "col-xl-6 col-sm-9 col-md-8 col-lg-6 wow fadeInRight",
+                              children: (0, l.jsxs)("div", {
+                                  className: "tf__about_img",
+                                  children: [(0, l.jsx)("img", {
+                                      src: "./grizzly Page 1_files/about_img.png",
+                                      alt: "about",
+                                      className: "img-fluid w-100"
+                                  }), (0, l.jsxs)("div", {
+                                      className: "text counter-box",
+                                      children: [(0, l.jsx)("i", {
+                                          className: "far fa-check-circle"
+                                      }), (0, l.jsx)("h3", {
+                                          children: e && (0, l.jsx)(r.ZP, {
+                                              start: 1,
+                                              end: 183,
+                                              duration: 5,
+                                              formattingFn: e => "".concat(e, "K+")
+                                          })
+                                      }), (0, l.jsx)("p", {
+                                          children: "Complete Projects"
+                                      })]
+                                  })]
+                              })
+                          })]
+                      })]
+                  })
+              })
+          }
+      },
+      95806: function(e, s, i) {
+          "use strict";
+          i.r(s);
+          var l = i(57437),
+              a = i(68387),
+              n = i(2996),
+              c = i(61396),
+              r = i.n(c);
+          i(2265), s.default = () => {
+              let e = (0, n.T)();
+              return (0, l.jsx)("section", {
+                  className: "tf__banner",
+                  children: (0, l.jsx)("div", {
+                      className: "container",
+                      children: (0, l.jsx)("div", {
+                          className: "row",
+                          children: (0, l.jsx)("div", {
+                              className: "col-xl-7 col-lg-8",
+                              children: (0, l.jsxs)("div", {
+                                  className: "tf__banner_text wow fadeInUp",
+                                  children: [(0, l.jsx)("h5", {
+                                      children: "Welcome to Grizzly Vidyalaya !"
+                                  }), (0, l.jsxs)("h1", {
+                                      children: ["Where Learning ", (0, l.jsx)("span", {
+                                          children: "Becomes"
+                                      }), " Adventure!"]
+                                  }), (0, l.jsx)("p", {
+                                      children: "Grizzly Vidyalaya is more than just a platform; it's a nurturing space where education transforms into an exciting adventure. With a passion for igniting curiosity and inspiring young minds."
+                                  }), (0, l.jsxs)("ul", {
+                                      className: "d-flex flex-wrap align-items-center",
+                                      children: [(0, l.jsx)("li", {
+                                          children: (0, l.jsx)(r(), {
+                                              className: "common_btn",
+                                              href: "#",
+                                              children: "Read More"
+                                          })
+                                      }), (0, l.jsx)("li", {
+                                          children: (0, l.jsx)("a", {
+                                              className: "venobox play_btn",
+                                              role: "button",
+                                              onClick: () => {
+                                                  e((0, a.EY)())
+                                              },
+                                              children: (0, l.jsx)("i", {
+                                                  className: "fas fa-play"
+                                              })
+                                          })
+                                      })]
+                                  })]
+                              })
+                          })
+                      })
+                  })
+              })
+          }
+      },
+      54897: function(e, s, i) {
+          "use strict";
+          i.r(s), i.d(s, {
+              default: function() {
+                  return t
+              }
+          });
+          var l = i(57437);
+          i(2265);
+          var a = i(74741),
+              n = i(61396),
+              c = i.n(n),
+              r = e => {
+                  let {
+                      startIndex: s,
+                      endIndex: i,
+                      eventData: n
+                  } = e;
+                  return (0, l.jsx)(a.Z, {
+                      className: "row event_slider",
+                      slidesToShow: 3,
+                      infinite: !0,
+                      dots: !0,
+                      autoplay: !0,
+                      arrows: !1,
+                      responsive: [{
+                          breakpoint: 1400,
+                          settings: {
+                              slidesToShow: 3
+                          }
+                      }, {
+                          breakpoint: 1200,
+                          settings: {
+                              slidesToShow: 2
+                          }
+                      }, {
+                          breakpoint: 992,
+                          settings: {
+                              slidesToShow: 2
+                          }
+                      }, {
+                          breakpoint: 768,
+                          settings: {
+                              slidesToShow: 1
+                          }
+                      }, {
+                          breakpoint: 576,
+                          settings: {
+                              slidesToShow: 1
+                          }
+                      }],
+                      children: void 0 !== s && void 0 !== i ? n.slice(s, i).map(e => (0, l.jsx)("div", {
+                          className: "col-xl-4 wow fadeInUp",
+                          children: (0, l.jsxs)("div", {
+                              className: "tf__single_event",
+                              children: [(0, l.jsxs)("div", {
+                                  className: "tf__single_event_img",
+                                  children: [(0, l.jsx)("img", {
+                                      src: e.imgSrc.image,
+                                      alt: e.imgSrc.alt,
+                                      className: "img-fluid w-100"
+                                  }), (0, l.jsx)(c(), {
+                                      className: "event_category ".concat(e.color),
+                                      href: "/events",
+                                      children: e.category
+                                  })]
+                              }), (0, l.jsxs)("div", {
+                                  className: "tf__single_event_text",
+                                  children: [(0, l.jsxs)("ul", {
+                                      children: [(0, l.jsxs)("li", {
+                                          children: [(0, l.jsx)("i", {
+                                              className: "far fa-map-marker-alt"
+                                          }), " ", e.location]
+                                      }), (0, l.jsxs)("li", {
+                                          children: [(0, l.jsx)("i", {
+                                              className: "far fa-clock"
+                                          }), " ", e.time]
+                                      })]
+                                  }), (0, l.jsx)(c(), {
+                                      className: "title",
+                                      href: "/events/".concat(e.slug),
+                                      children: e.title
+                                  }), (0, l.jsx)("p", {
+                                      children: e.desc
+                                  }), (0, l.jsxs)("div", {
+                                      className: "tf__single_event_footer",
+                                      children: [(0, l.jsx)("span", {
+                                          children: e.title
+                                      }), (0, l.jsxs)("span", {
+                                          children: ["$", e.price, ".00"]
+                                      })]
+                                  })]
+                              })]
+                          })
+                      }, e._id)) : n.slice(i).map(e => (0, l.jsx)("div", {
+                          className: "col-xl-4 wow fadeInUp",
+                          children: (0, l.jsxs)("div", {
+                              className: "tf__single_event",
+                              children: [(0, l.jsxs)("div", {
+                                  className: "tf__single_event_img",
+                                  children: [(0, l.jsx)("img", {
+                                      src: e.imgSrc.image,
+                                      alt: "event",
+                                      className: "img-fluid w-100"
+                                  }), (0, l.jsx)("a", {
+                                      className: "event_category ".concat(e.color),
+                                      href: "/events",
+                                      children: e.category
+                                  })]
+                              }), (0, l.jsxs)("div", {
+                                  className: "tf__single_event_text",
+                                  children: [(0, l.jsxs)("ul", {
+                                      children: [(0, l.jsxs)("li", {
+                                          children: [(0, l.jsx)("i", {
+                                              className: "far fa-map-marker-alt"
+                                          }), " ", e.location]
+                                      }), (0, l.jsxs)("li", {
+                                          children: [(0, l.jsx)("i", {
+                                              className: "far fa-clock"
+                                          }), " ", e.time]
+                                      })]
+                                  }), (0, l.jsx)(c(), {
+                                      className: "title",
+                                      href: "/events/".concat(e.slug),
+                                      children: e.title
+                                  }), (0, l.jsx)("p", {
+                                      children: e.desc
+                                  }), (0, l.jsxs)("div", {
+                                      className: "tf__single_event_footer",
+                                      children: [(0, l.jsx)("span", {
+                                          children: e.title
+                                      }), (0, l.jsxs)("span", {
+                                          children: ["$", e.price, ".00"]
+                                      })]
+                                  })]
+                              })]
+                          })
+                      }, e._id))
+                  })
+              },
+              t = e => {
+                  let {
+                      section: s,
+                      startIndex: i,
+                      endIndex: a,
+                      eventData: n
+                  } = e;
+                  return (0, l.jsx)("section", {
+                      className: s,
+                      children: (0, l.jsxs)("div", {
+                          className: "container",
+                          children: [(0, l.jsx)("div", {
+                              className: "row",
+                              children: (0, l.jsx)("div", {
+                                  className: "col-xl-6 col-md-8 col-lg-6 m-auto wow fadeInUp",
+                                  children: (0, l.jsxs)("div", {
+                                      className: "tf__heading_area mb_40",
+                                      children: [(0, l.jsx)("h5", {
+                                          children: "Our Upcoming Events"
+                                      }), (0, l.jsx)("h2", {
+                                          children: "Educate & Elevate: Events That Inspire Learning"
+                                      })]
+                                  })
+                              })
+                          }), (0, l.jsx)(r, {
+                              startIndex: i,
+                              endIndex: a,
+                              eventData: n
+                          })]
+                      })
+                  })
+              }
+      },
+      75985: function(e, s, i) {
+          "use strict";
+          i.r(s);
+          var l = i(57437),
+              a = i(2265);
+          s.default = e => {
+              let {
+                  img: s,
+                  faqData: i
+              } = e, [n, c] = (0, a.useState)(0), r = e => {
+                  c(s => s === e ? null : e)
+              };
+              return (0, l.jsx)("section", {
+                  className: "tf__faq mt_100 pt_95 xs_pt_100 pb_100",
+                  children: (0, l.jsx)("div", {
+                      className: "container",
+                      children: (0, l.jsxs)("div", {
+                          className: "row",
+                          children: [(0, l.jsx)("div", {
+                              className: "col-xl-6 col-lg-6 wow fadeInLeft",
+                              children: (0, l.jsx)("div", {
+                                  className: "tf__faq_img",
+                                  children: (0, l.jsx)("img", {
+                                      src: s,
+                                      alt: "faqs",
+                                      className: "img-fluid w-100"
+                                  })
+                              })
+                          }), (0, l.jsx)("div", {
+                              className: "col-xl-6 col-lg-6 wow fadeInRight",
+                              children: (0, l.jsxs)("div", {
+                                  className: "tf__faq_text",
+                                  children: [(0, l.jsxs)("div", {
+                                      className: "tf__heading_area tf__heading_area_left mb_25",
+                                      children: [(0, l.jsx)("h5", {
+                                          children: "Our Education FAQ"
+                                      }), (0, l.jsx)("h2", {
+                                          children: "Got Questions? Here Are Your Answers - FAQ"
+                                      })]
+                                  }), (0, l.jsxs)("p", {
+                                      className: "description",
+                                      children: ["Business tailored it design, management & support services business agency elit, sed do eiusmod tempor.", " "]
+                                  }), (0, l.jsx)("div", {
+                                      className: "tf__faq_accordion",
+                                      children: (0, l.jsx)("div", {
+                                          className: "accordion",
+                                          id: "accordionExample",
+                                          children: null == i ? void 0 : i.slice(0, 4).map((e, s) => (0, l.jsxs)("div", {
+                                              className: "accordion-item ".concat(e.color),
+                                              children: [(0, l.jsx)("h2", {
+                                                  className: "accordion-header",
+                                                  id: "headingOne",
+                                                  children: (0, l.jsx)("button", {
+                                                      className: "accordion-button ".concat(n === s ? "" : "collapsed"),
+                                                      onClick: () => r(s),
+                                                      children: e.question
+                                                  })
+                                              }), (0, l.jsx)("div", {
+                                                  id: "collapseOne",
+                                                  className: "accordion-collapse collapse ".concat(n === s ? "show" : ""),
+                                                  children: (0, l.jsx)("div", {
+                                                      className: "accordion-body",
+                                                      children: (0, l.jsx)("p", {
+                                                          children: e.answer
+                                                      })
+                                                  })
+                                              })]
+                                          }, s))
+                                      })
+                                  })]
+                              })
+                          })]
+                      })
+                  })
+              })
+          }
+      },
+      39048: function(e, s, i) {
+          "use strict";
+          i.r(s);
+          var l = i(57437),
+              a = i(68387),
+              n = i(2996);
+          i(2265);
+          var c = i(6500);
+          s.default = () => {
+              let e = (0, n.T)(),
+                  s = (0, n.C)(e => e.video.isVideoOpen);
+              return (0, l.jsxs)(c.Z, {
+                  show: s,
+                  onHide: () => {
+                      e((0, a.Mp)())
+                  },
+                  size: "lg",
+                  centered: !0,
+                  className: "modal-video",
+                  id: "LKQIY6EGFR9TU",
+                  children: [(0, l.jsx)(c.Z.Header, {
+                      className: "vidoe-modal-header",
+                      closeButton: !0
+                  }), (0, l.jsx)(c.Z.Body, {
+                      className: "modal-video-body",
+                      children: (0, l.jsx)("div", {
+                          className: "modal-video-inner",
+                          id: "modal-video-inner-LKQIY6EGFR9TU",
+                          children: (0, l.jsx)("div", {
+                              className: "modal-video-movie-wrap",
+                              children: (0, l.jsx)("iframe", {
+                                  className: "video-modal-iframe",
+                                  src: "https://www.youtube.com/embed/rWfzDx3Uhxk?si=DlE95UWvwE07JAPk",
+                                  allow: "autoplay; accelerometer; encrypted-media; gyroscope; picture-in-picture",
+                                  allowFullScreen: !0
+                              })
+                          })
+                      })
+                  })]
+              })
+          }
+      },
+      72534: function(e, s, i) {
+          "use strict";
+          i.r(s);
+          var l = i(57437),
+              a = i(61396),
+              n = i.n(a),
+              c = i(2265),
+              r = i(50103),
+              t = i(2996),
+              o = i(23005);
+          s.default = e => {
+              let {
+                  style: s,
+                  logo: i
+              } = e, a = (0, t.T)(), d = (0, t.C)(e => e.mobileNav.isMobileNavOpen), m = () => {
+                  a((0, o.fx)())
+              }, [h, x] = (0, c.useState)(!1);
+              (0, c.useEffect)(() => {
+                  let e = () => {
+                      window.scrollY >= 50 ? x(!0) : x(!1)
+                  };
+                  return window.addEventListener("scroll", e), () => {
+                      window.removeEventListener("scroll", e)
+                  }
+              }, []);
+              let u = (0, c.useRef)(null);
+              return (0, c.useEffect)(() => {
+                  let e = e => {
+                      u.current && !u.current.contains(e.target) && d && m()
+                  };
+                  return document.addEventListener("mousedown", e), () => {
+                      document.removeEventListener("mousedown", e)
+                  }
+              }, [d]), (0, l.jsx)("nav", {
+                  className: "navbar navbar-expand-lg main_menu ".concat(s, " ").concat(h ? "menu_fix" : ""),
+                  ref: u,
+                  children: (0, l.jsxs)("div", {
+                      className: "container",
+                      children: [(0, l.jsx)(n(), {
+                          className: "navbar-brand",
+                          href: "/",
+                          children: (0, l.jsx)("img", {
+                              src: i,
+                              alt: "Eduor",
+                              className: "img-fluid w-100"
+                          })
+                      }), d ? (0, l.jsx)("button", {
+                          className: "navbar-toggler",
+                          type: "button",
+                          onClick: m,
+                          children: (0, l.jsx)("i", {
+                              className: "fa fa-times close_icon"
+                          })
+                      }) : (0, l.jsx)("button", {
+                          className: "navbar-toggler",
+                          type: "button",
+                          onClick: () => {
+                              a((0, o.Ac)())
+                          },
+                          children: (0, l.jsx)("i", {
+                              className: "fa fa-bars menu_icon"
+                          })
+                      }), (0, l.jsx)(r.Z, {
+                          position: "ms-auto",
+                          btnPosition: !1,
+                          navRef: u
+                      })]
+                  })
+              })
+          }
+      },
+      50103: function(e, s, i) {
+          "use strict";
+          i.d(s, {
+              Z: function() {
+                  return m
+              }
+          });
+          var l = i(57437);
+          i(2265);
+          var a = i(61396),
+              n = i.n(a),
+              c = i(24033),
+              r = i(2996),
+              t = i(23005),
+              o = e => {
+                  let {
+                      href: s,
+                      children: i
+                  } = e, a = (0, r.T)(), o = (0, r.C)(e => e.mobileNav.isMobileNavOpen), d = () => {
+                      a((0, t.fx)())
+                  }, m = (0, c.usePathname)(), h = m === s;
+                  return (0, l.jsx)(n(), {
+                      href: s,
+                      className: "nav-link ".concat(h ? "active" : ""),
+                      onClick: () => {
+                          o && d()
+                      },
+                      children: i
+                  })
+              },
+              d = e => {
+                  let {
+                      href: s,
+                      children: i
+                  } = e, a = (0, r.T)(), o = (0, r.C)(e => e.mobileNav.isMobileNavOpen), d = () => {
+                      a((0, t.fx)())
+                  }, m = (0, c.usePathname)(), h = m === s;
+                  return (0, l.jsx)(n(), {
+                      href: s,
+                      className: h ? "active" : "",
+                      onClick: () => {
+                          o && d()
+                      },
+                      children: i
+                  })
+              },
+              m = e => {
+                  let {
+                      position: s,
+                      btnPosition: i,
+                      navRef: a
+                  } = e, n = (0, r.C)(e => e.mobileNav.isMobileNavOpen);
+                  return (0, l.jsxs)("div", {
+                      ref: a,
+                      className: "collapse navbar-collapse ".concat(n ? "show" : ""),
+                      id: "navbarNav",
+                      children: [(0, l.jsxs)("ul", {
+                          className: "navbar-nav ".concat(s),
+                          children: [(0, l.jsxs)
+                              ("li", {
+                                  className: "nav-item",
+                                  children: [
+                                      (0, l.jsx)("a", {
+                                          className: "nav-link",
+                                          href: "#",
+                                          children: "Home"
+                                      })
+                                  ]
+                              }),
+                              (0, l.jsx)("li", {
+                                  className: "nav-item",
+                                  children: (0, l.jsx)(o, {
+                                      className: "nav-link",
+                                      href: "#",
+                                      children: "about us"
+                                  })
+                              }),
+
+                              (0, l.jsxs)("li", {
+                                  className: "nav-item",
+                                  children: [
+                                      (0, l.jsx)("a", {
+                                          className: "nav-link",
+                                          href: "#",
+                                          children: "Courses"
+                                      })
+                                  ]
+                              }),
+
+                              (0, l.jsxs)("li", {
+                                  className: "nav-item",
+                                  children: [
+                                      (0, l.jsxs)("a", {
+                                          className: "nav-link",
+                                          href: "#",
+                                          children: "Blog"
+                                      })
+                                  ]
+                              }),
+
+                              (0, l.jsxs)("li", {
+                                  className: "nav-item",
+                                  children: [
+                                      (0, l.jsxs)("a", {
+                                          className: "nav-link",
+                                          href: "#",
+                                          children: "Page"
+                                      })
+                                  ]
+                              }),
+
+                              (0, l.jsx)("li", {
+                                  className: "nav-item",
+                                  children: (0, l.jsx)(o, {
+                                      href: "#",
+                                      children: "contact"
+                                  })
+                              }), i ? null : (0, l.jsx)("li", {
+                                  className: "nav-item",
+                                  children: (0, l.jsx)("a", {
+                                      className: "nav-link common_btn",
+                                      href: "#",
+                                      children: "LEARN MORE"
+                                  })
+                              })
+                          ]
+                      }), i ? (0, l.jsx)("a", {
+                          className: "common_btn_2 ms-auto",
+                          href: "#",
+                          children: "learn more"
+                      }) : null]
+                  })
+              }
+      },
+      40326: function(e, s, i) {
+          "use strict";
+          i.r(s);
+          var l = i(57437),
+              a = i(61396),
+              n = i.n(a);
+          i(2265);
+          var c = i(74741);
+          s.default = e => {
+              let {
+                  blogData: s
+              } = e;
+              return (0, l.jsx)(c.Z, {
+                  className: "row blog_slider",
+                  slidesToShow: 3,
+                  infinite: !0,
+                  dots: !0,
+                  arrows: !1,
+                  autoplay: !0,
+                  slidesToScroll: 1,
+                  responsive: [{
+                      breakpoint: 1400,
+                      settings: {
+                          slidesToShow: 3
+                      }
+                  }, {
+                      breakpoint: 1200,
+                      settings: {
+                          slidesToShow: 2
+                      }
+                  }, {
+                      breakpoint: 992,
+                      settings: {
+                          slidesToShow: 2
+                      }
+                  }, {
+                      breakpoint: 768,
+                      settings: {
+                          slidesToShow: 1
+                      }
+                  }, {
+                      breakpoint: 576,
+                      settings: {
+                          slidesToShow: 1
+                      }
+                  }],
+                  children: null == s ? void 0 : s.slice(0, 4).map(e => (0, l.jsx)("div", {
+                      className: "col-xl-4 wow fadeInUp",
+                      children: (0, l.jsxs)("div", {
+                          className: "tf__single_blog",
+                          children: [(0, l.jsx)(n(), {
+                              className: "tf__single_blog_img",
+                              href: "/blog/".concat(e.slug),
+                              children: (0, l.jsx)("img", {
+                                  src: e.imgSrc.image,
+                                  alt: e.imgSrc.alt,
+                                  className: "img-fluid w-100"
+                              })
+                          }), (0, l.jsxs)("div", {
+                              className: "tf__single_blog_text",
+                              children: [(0, l.jsx)(n(), {
+                                  className: "category ".concat(e.color),
+                                  href: "/blog",
+                                  children: e.category
+                              }), (0, l.jsx)(n(), {
+                                  className: "title",
+                                  href: "/blog/".concat(e.slug),
+                                  children: e.title
+                              }), (0, l.jsx)("p", {
+                                  children: e.desc
+                              }), (0, l.jsxs)(n(), {
+                                  className: "read_btn",
+                                  href: "/blog/".concat(e.slug),
+                                  children: ["Read More ", (0, l.jsx)("i", {
+                                      className: "fas fa-chevron-circle-right"
+                                  })]
+                              })]
+                          })]
+                      })
+                  }, e._id))
+              })
+          }
+      },
+      82696: function(e, s, i) {
+          "use strict";
+          i.r(s);
+          var l = i(57437);
+          i(2265);
+          var a = i(74741);
+          s.default = e => {
+              let {
+                  testimonialData: s
+              } = e;
+              return (0, l.jsx)(a.Z, {
+                  className: "row testimonial_slider",
+                  slidesToShow: 2,
+                  infinite: !0,
+                  dots: !1,
+                  arrows: !1,
+                  slidesToScroll: 1,
+                  responsive: [{
+                      breakpoint: 1400,
+                      settings: {
+                          slidesToShow: 2
+                      }
+                  }, {
+                      breakpoint: 1200,
+                      settings: {
+                          slidesToShow: 2
+                      }
+                  }, {
+                      breakpoint: 992,
+                      settings: {
+                          slidesToShow: 2
+                      }
+                  }, {
+                      breakpoint: 768,
+                      settings: {
+                          slidesToShow: 1
+                      }
+                  }, {
+                      breakpoint: 576,
+                      settings: {
+                          slidesToShow: 1
+                      }
+                  }],
+                  children: s.map(e => (0, l.jsx)("div", {
+                      className: "col-xl-6 wow fadeInUp",
+                      children: (0, l.jsxs)("div", {
+                          className: "tf__single_testimonial",
+                          children: [(0, l.jsx)("div", {
+                              className: "icon",
+                              children: (0, l.jsx)("i", {
+                                  className: "fas fa-quote-left"
+                              })
+                          }), (0, l.jsx)("p", {
+                              className: "description",
+                              children: e.desc
+                          }), (0, l.jsx)("div", {
+                              className: "img",
+                              children: (0, l.jsx)("img", {
+                                  src: e.imgSrc.image,
+                                  alt: "client",
+                                  className: "img-f;uid w-100"
+                              })
+                          }), (0, l.jsx)("h3", {
+                              className: "title",
+                              children: e.name
+                          }), (0, l.jsx)("p", {
+                              className: "designation",
+                              children: e.designation
+                          }), (0, l.jsxs)("p", {
+                              className: "rating",
+                              children: [(0, l.jsx)("i", {
+                                  className: "fas fa-star fill"
+                              }), (0, l.jsx)("i", {
+                                  className: "fas fa-star fill"
+                              }), (0, l.jsx)("i", {
+                                  className: "fas fa-star fill"
+                              }), (0, l.jsx)("i", {
+                                  className: "fas fa-star"
+                              }), (0, l.jsx)("i", {
+                                  className: "fas fa-star"
+                              })]
+                          })]
+                      })
+                  }, e._id))
+              })
+          }
+      },
+      68699: function(e, s, i) {
+          "use strict";
+          i.r(s);
+          var l = i(57437);
+          i(2265);
+          var a = i(74741);
+          s.default = e => {
+              let {
+                  workData: s
+              } = e;
+              return (0, l.jsx)(a.Z, {
+                  className: "row work_slider",
+                  slidesToShow: 3,
+                  infinite: !0,
+                  dots: !0,
+                  autoplay: !0,
+                  arrows: !1,
+                  slidesToScroll: 1,
+                  responsive: [{
+                      breakpoint: 1400,
+                      settings: {
+                          slidesToShow: 3
+                      }
+                  }, {
+                      breakpoint: 1200,
+                      settings: {
+                          slidesToShow: 3
+                      }
+                  }, {
+                      breakpoint: 992,
+                      settings: {
+                          slidesToShow: 2
+                      }
+                  }, {
+                      breakpoint: 768,
+                      settings: {
+                          slidesToShow: 1
+                      }
+                  }, {
+                      breakpoint: 576,
+                      settings: {
+                          slidesToShow: 1
+                      }
+                  }],
+                  children: s.map(e => (0, l.jsx)("div", {
+                      className: "col-xl-4 wow fadeInUp",
+                      children: (0, l.jsxs)("div", {
+                          className: "tf__work_single ".concat(e.color),
+                          children: [(0, l.jsx)("div", {
+                              className: "tf__work_single_img",
+                              children: (0, l.jsx)("img", {
+                                  src: e.imgSrc.image,
+                                  alt: e.imgSrc.alt,
+                                  className: "img-fluid w-100"
+                              })
+                          }), (0, l.jsxs)("div", {
+                              className: "tf__work_single_text",
+                              children: [(0, l.jsx)("h3", {
+                                  children: e.task
+                              }), (0, l.jsx)("p", {
+                                  children: e.desc
+                              }), (0, l.jsx)("a", {
+                                  href: "#",
+                                  children: (0, l.jsx)("i", {
+                                      className: "fas fa-long-arrow-right"
+                                  })
+                              })]
+                          })]
+                      })
+                  }, e._id))
+              })
+          }
+      },
+      36038: function(e, s, i) {
+          "use strict";
+          i.r(s);
+          var l = i(57437),
+              a = i(2265);
+          s.default = e => {
+              let {
+                  style: s
+              } = e, [i, n] = (0, a.useState)(!1);
+              (0, a.useEffect)(() => (window.addEventListener("scroll", c), () => {
+                  window.removeEventListener("scroll", c)
+              }), []);
+              let c = () => {
+                  let e = window.scrollY;
+                  e > 300 ? n(!0) : n(!1)
+              };
+              return (0, l.jsx)("div", {
+                  children: i && (0, l.jsxs)("div", {
+                      className: "tf__scroll_btn ".concat(s),
+                      role: "button",
+                      onClick: () => {
+                          window.scrollTo({
+                              top: 0,
+                              behavior: "smooth"
+                          })
+                      },
+                      children: [" ", "go to top", " "]
+                  })
+              })
+          }
+      },
+      99998: function(e, s, i) {
+          "use strict";
+          i.r(s);
+          var l = i(57437),
+              a = i(68387),
+              n = i(2996);
+          i(2265), s.default = () => {
+              let e = (0, n.T)();
+              return (0, l.jsx)("section", {
+                  className: "tf__video mt_100",
+                  children: (0, l.jsx)("div", {
+                      className: "tf__video_overlay pt_100 pb_100",
+                      children: (0, l.jsx)("div", {
+                          className: "container",
+                          children: (0, l.jsx)("div", {
+                              className: "row",
+                              children: (0, l.jsx)("div", {
+                                  className: "col-xl-6 m-auto wow fadeInUp",
+                                  children: (0, l.jsxs)("div", {
+                                      className: "tf__video_text",
+                                      children: [(0, l.jsx)("a", {
+                                          className: "venobox play_btn",
+                                          role: "button",
+                                          onClick: () => {
+                                              e((0, a.EY)())
+                                          },
+                                          children: (0, l.jsx)("i", {
+                                              className: "fas fa-play"
+                                          })
+                                      }), (0, l.jsx)("h4", {
+                                          children: "Let’s See More About Grizzly Vidyalaya !"
+                                      }), (0, l.jsx)("p", {
+                                          children: "There are many variations of passages of agency Lorem Ipsum Fasts injecte."
+                                      }), (0, l.jsx)("a", {
+                                          className: "common_btn",
+                                          href: "#",
+                                          children: "Apply Now"
+                                      })]
+                                  })
+                              })
+                          })
+                      })
+                  })
+              })
+          }
+      },
+      23005: function(e, s, i) {
+          "use strict";
+          i.d(s, {
+              Ac: function() {
+                  return n
+              },
+              fx: function() {
+                  return c
+              }
+          });
+          var l = i(21685);
+          let a = (0, l.oM)({
+                  name: "mobileNav",
+                  initialState: {
+                      isMobileNavOpen: !1
+                  },
+                  reducers: {
+                      toggleMobileNavOpen: e => {
+                          e.isMobileNavOpen = !0
+                      },
+                      toggleMobileNavClose: e => {
+                          e.isMobileNavOpen = !1
+                      }
+                  }
+              }),
+              {
+                  toggleMobileNavOpen: n,
+                  toggleMobileNavClose: c
+              } = a.actions;
+          s.ZP = a.reducer
+      },
+      68387: function(e, s, i) {
+          "use strict";
+          i.d(s, {
+              EY: function() {
+                  return n
+              },
+              Mp: function() {
+                  return c
+              }
+          });
+          var l = i(21685);
+          let a = (0, l.oM)({
+                  name: "video",
+                  initialState: {
+                      isVideoOpen: !1
+                  },
+                  reducers: {
+                      toggleVideoOpen: e => {
+                          e.isVideoOpen = !0
+                      },
+                      toggleVideoClose: e => {
+                          e.isVideoOpen = !1
+                      }
+                  }
+              }),
+              {
+                  toggleVideoOpen: n,
+                  toggleVideoClose: c
+              } = a.actions;
+          s.ZP = a.reducer
+      },
+      2996: function(e, s, i) {
+          "use strict";
+          i.d(s, {
+              C: function() {
+                  return n
+              },
+              T: function() {
+                  return a
+              }
+          });
+          var l = i(93046);
+          let a = l.I0,
+              n = l.v9
+      }
+  },
+  function(e) {
+      e.O(0, [2719, 4312, 8251, 9349, 6, 6500, 2971, 2472, 1744], function() {
+          return e(e.s = 88336)
+      }), _N_E = e.O()
+  }
+]);
+
