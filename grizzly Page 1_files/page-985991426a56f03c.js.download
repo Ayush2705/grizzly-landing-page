@@ -111,8 +111,9 @@
                                               duration: 5,
                                               formattingFn: e => "".concat(e, "K+")
                                           })
-                                      }), (0, l.jsx)("p", {
-                                          children: "Complete Projects"
+                                      }), (0, l.jsx)("h4", {
+                                        className: "",
+                                          children: "Students"
                                       })]
                                   })]
                               })
@@ -143,13 +144,13 @@
                               children: (0, l.jsxs)("div", {
                                   className: "tf__banner_text wow fadeInUp",
                                   children: [(0, l.jsx)("h5", {
-                                      children: "Welcome to Grizzly Vidyalaya !"
+                                      children: "Welcome to Grizzly Public School !"
                                   }), (0, l.jsxs)("h1", {
                                       children: ["Where Learning ", (0, l.jsx)("span", {
                                           children: "Becomes"
                                       }), " Adventure!"]
                                   }), (0, l.jsx)("p", {
-                                      children: "Grizzly Vidyalaya is more than just a platform; it's a nurturing space where education transforms into an exciting adventure. With a passion for igniting curiosity and inspiring young minds."
+                                      children: "Grizzly Public School is more than just a platform; it's a nurturing space where education transforms into an exciting adventure. With a passion for igniting curiosity and inspiring young minds."
                                   }), (0, l.jsxs)("ul", {
                                       className: "d-flex flex-wrap align-items-center",
                                       children: [(0, l.jsx)("li", {
@@ -336,7 +337,7 @@
                                   children: (0, l.jsxs)("div", {
                                       className: "tf__heading_area mb_40",
                                       children: [(0, l.jsx)("h5", {
-                                          children: "Our Upcoming Events"
+                                          children: "Past Events"
                                       }), (0, l.jsx)("h2", {
                                           children: "Educate & Elevate: Events That Inspire Learning"
                                       })]
@@ -625,7 +626,7 @@
                                       (0, l.jsx)("a", {
                                           className: "nav-link",
                                           href: "#",
-                                          children: "Courses"
+                                          children: "Categories"
                                       })
                                   ]
                               }),
@@ -637,17 +638,6 @@
                                           className: "nav-link",
                                           href: "#",
                                           children: "Blog"
-                                      })
-                                  ]
-                              }),
-
-                              (0, l.jsxs)("li", {
-                                  className: "nav-item",
-                                  children: [
-                                      (0, l.jsxs)("a", {
-                                          className: "nav-link",
-                                          href: "#",
-                                          children: "Page"
                                       })
                                   ]
                               }),
@@ -979,7 +969,7 @@
                                               className: "fas fa-play"
                                           })
                                       }), (0, l.jsx)("h4", {
-                                          children: "Let’s See More About Grizzly Vidyalaya !"
+                                          children: "Let’s See More About Grizzly Public School !"
                                       }), (0, l.jsx)("p", {
                                           children: "There are many variations of passages of agency Lorem Ipsum Fasts injecte."
                                       }), (0, l.jsx)("a", {
