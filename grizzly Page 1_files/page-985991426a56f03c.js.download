@@ -49,7 +49,7 @@
                                           children: [(0, l.jsx)("h4", {
                                               children: "Study Off Flexibly"
                                           }), (0, l.jsx)("p", {
-                                              children: "We can provide you with a reliable handyan in Please input an email address down below school. Please input anand school. included the today."
+                                              children: "At Grizzly Public School, we believe in the power of flexibility to shape each student’s unique journey. Our curriculum, aligned with the National Education Policy (NEP) and the National Curriculum Framework (NCF), encourages curiosity, experiential learning, and critical thinking."
                                           })]
                                       }), (0, l.jsx)("a", {
                                           href: "#",
@@ -73,18 +73,22 @@
                                           children: "Discover Our Story: Nurturing Growth, Fostering Learning."
                                       })]
                                   }), (0, l.jsxs)("p", {
-                                      children: ["Business tailored it design, management & support services business agency elit, sed do eiusmod tempor.", " "]
+                                      children: [" Empowering students to unlock potential and impact the future."]
                                   }), (0, l.jsxs)("ul", {
                                       children: [(0, l.jsx)("li", {
-                                          children: "Business school's Institut constructivism."
+                                          children: "Focus on holistic growth: intellectual, emotional, and social"
                                       }), (0, l.jsx)("li", {
-                                          children: "We give management school best."
+                                          children: "State-of-the-art infrastructure and advanced study materials"
                                       }), (0, l.jsx)("li", {
-                                          children: "Media in this school solution."
+                                          children: "Curiosity-driven curriculum with diverse activities and programs."
                                       }), (0, l.jsx)("li", {
-                                          children: "Business school's Institut constructivism."
+                                          children: "Literary, scientific, cultural, artistic, and sports activities offered"
                                       }), (0, l.jsx)("li", {
-                                          children: "We give management school best."
+                                          children: "Personality development fosters self-reliance, confidence, and leadership."
+                                      }), (0, l.jsx)("li", {
+                                          children: "Teachers act as mentors, guiding students toward excellence."
+                                      }), (0, l.jsx)("li", {
+                                          children: "Nurturing individual talents and preparing leaders with integrity"
                                       })]
                                   }), (0, l.jsx)(n(), {
                                       href: "/about",
@@ -150,7 +154,7 @@
                                           children: "Becomes"
                                       }), " Adventure!"]
                                   }), (0, l.jsx)("p", {
-                                      children: "Grizzly Public School is more than just a platform; it's a nurturing space where education transforms into an exciting adventure. With a passion for igniting curiosity and inspiring young minds."
+                                      children: "At Grizzly Public School, learning is not just a process — it’s an adventure. Guided by the belief that ''Education is life itself,'' we create a dynamic environment where curiosity, creativity, and exploration thrive. Our state-of-the-art infrastructure and innovative tools transform every lesson into an exciting journey "
                                   }), (0, l.jsxs)("ul", {
                                       className: "d-flex flex-wrap align-items-center",
                                       children: [(0, l.jsx)("li", {
