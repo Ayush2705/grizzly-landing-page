@@ -67,11 +67,7 @@
                                   className: "tf__about_text",
                                   children: [(0, l.jsxs)("div", {
                                       className: "tf__heading_area tf__heading_area_left mb_25",
-                                      children: [(0, l.jsx)("h5", {
-                                          children: "OUR About Us"
-                                      }), (0, l.jsx)("h2", {
-                                          children: "Discover Our Story: Nurturing Growth, Fostering Learning."
-                                      })]
+                                      children: [(0, l.jsx)("h5", {children: ""}),(0, l.jsx)("h2", {children: "Discover Our Story: Nurturing Growth, Fostering Learning."})]
                                   }), (0, l.jsxs)("p", {
                                       children: [" Empowering students to unlock potential and impact the future."]
                                   }), (0, l.jsxs)("ul", {
@@ -974,11 +970,9 @@
                                           })
                                       }), (0, l.jsx)("h4", {
                                           children: "Let’s See More About Grizzly Public School !"
-                                      }), (0, l.jsx)("p", {
-                                          children: "There are many variations of passages of agency Lorem Ipsum Fasts injecte."
                                       }), (0, l.jsx)("a", {
                                           className: "common_btn",
-                                          href: "#",
+                                          href: "",
                                           children: "Apply Now"
                                       })]
                                   })
