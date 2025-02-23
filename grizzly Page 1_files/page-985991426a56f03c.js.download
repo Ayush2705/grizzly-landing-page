@@ -87,7 +87,7 @@
                                           children: "Nurturing individual talents and preparing leaders with integrity"
                                       })]
                                   }), (0, l.jsx)(n(), {
-                                      href: "/about",
+                                      href: "#",
                                       className: "common_btn",
                                       children: "about more"
                                   })]
@@ -143,8 +143,9 @@
                               className: "col-xl-7 col-lg-8",
                               children: (0, l.jsxs)("div", {
                                   className: "tf__banner_text wow fadeInUp",
-                                  children: [(0, l.jsx)("h5", {
-                                      children: "Welcome to Grizzly Public School !"
+                                  children: [(0, l.jsx)("h4", {
+                                    className: "",
+                                      children: ""
                                   }), (0, l.jsxs)("h1", {
                                       children: ["Where Learning ", (0, l.jsx)("span", {
                                           children: "Becomes"
@@ -970,11 +971,135 @@
                                           })
                                       }), (0, l.jsx)("h4", {
                                           children: "Let’s See More About Grizzly Public School !"
-                                      }), (0, l.jsx)("a", {
-                                          className: "common_btn",
-                                          href: "",
-                                          children: "Apply Now"
-                                      })]
+                                      }), (0, l.jsx)("div", {
+    children: [
+        (0, l.jsx)("a", {
+            className: "common_btn",
+            href: "javascript:void(0);",
+            onClick: () => document.getElementById("popupForm").style.display = "flex",
+            children: "Apply Now"
+        }),
+        (0, l.jsx)("div", {
+            id: "popupForm",
+            className: "popup_form",
+            style: {
+                display: "none",
+                position: "fixed",
+                top: "0",
+                left: "0",
+                width: "100%",
+                height: "100%",
+                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                justifyContent: "center",
+                alignItems: "center",
+                zIndex: "1000"
+            },
+            children: (0, l.jsx)("div", {
+                className: "form_container",
+                style: {
+                    backgroundColor: "#fff",
+                    padding: "20px",
+                    borderRadius: "10px",
+                    width: "400px",
+                    boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+                    textAlign: "center"
+                },
+                children: [
+                    (0, l.jsx)("h2", { children: "Application Form" }),
+                    (0, l.jsx)("form", {
+                        id: "applicationForm",
+                        action: "https://formspree.io/f/manqknjg",
+                        method: "POST",
+                        onSubmit: (e) => {
+                            e.preventDefault();
+                            const classField = document.getElementById("classApplyingFor");
+                            if (!classField.value) {
+                                alert("Please select a class before submitting the form.");
+                                return;
+                            }
+                            fetch("https://formspree.io/f/manqknjg", {
+                                method: "POST",
+                                body: new FormData(e.target),
+                                headers: {
+                                    Accept: "application/json"
+                                }
+                            }).then(response => {
+                                if (response.ok) {
+                                    document.getElementById("successMessage").style.display = "block";
+                                    e.target.reset();
+                                    setTimeout(() => {
+                                        document.getElementById("popupForm").style.display = "none";
+                                        document.getElementById("successMessage").style.display = "none";
+                                    }, 3000);
+                                }
+                            });
+                        },
+                        children: [
+                            (0, l.jsx)("label", { children: "Name:*" }),
+                            (0, l.jsx)("input", {
+                                type: "text",
+                                name: "name",
+                                required: true,
+                                style: { borderRadius: "10px", padding: "8px", width: "100%", marginBottom: "10px" }
+                            }),
+                            (0, l.jsx)("label", { children: "Class Applying For:*" }),
+                            (0, l.jsx)("select", {
+                                id: "classApplyingFor",
+                                name: "class",
+                                required: true,
+                                defaultValue: "",
+                                style: { borderRadius: "10px", padding: "8px", width: "100%", marginBottom: "10px" },
+                                children: [
+                                    "PG", "Nursery", "LKG", "UKG", "Std. 1", "Std. 2", "Std. 3", "Std. 4", "Std. 5", "Std. 6", "Std. 7", "Std. 8"
+                                ].map((cls) => (0, l.jsx)("option", { value: cls, children: cls }, cls))
+                            }),
+                            (0, l.jsx)("label", { children: "Contact Number:*" }),
+                            (0, l.jsx)("input", {
+                                type: "tel",
+                                name: "contact",
+                                required: true,
+                                pattern: "\\d{10}",
+                                title: "Please enter a valid 10-digit phone number",
+                                style: { borderRadius: "10px", padding: "8px", width: "100%", marginBottom: "10px" }
+                            }),
+                            (0, l.jsx)("label", { children: "Additional Message:" }),
+                            (0, l.jsx)("textarea", {
+                                name: "message",
+                                style: { borderRadius: "10px", padding: "8px", width: "100%", marginBottom: "10px" }
+                            }),
+                            (0, l.jsx)("p", {
+                                style: { fontSize: "12px", color: "red", textAlign: "left", marginTop: "5px" },
+                                children: "* marked are compulsory"
+                            }),
+                            (0, l.jsx)("div", {
+                                style: { display: "flex", justifyContent: "space-between", marginTop: "10px" },
+                                children: [
+                                    (0, l.jsx)("button", {
+                                        type: "submit",
+                                        style: { backgroundColor: "green", color: "white", padding: "10px 20px", borderRadius: "5px", border: "none", cursor: "pointer" },
+                                        children: "Submit"
+                                    }),
+                                    (0, l.jsx)("button", {
+                                        type: "button",
+                                        onClick: () => document.getElementById("popupForm").style.display = "none",
+                                        style: { backgroundColor: "red", color: "white", padding: "10px 20px", borderRadius: "5px", border: "none", cursor: "pointer" },
+                                        children: "Close"
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    (0, l.jsx)("p", {
+                        id: "successMessage",
+                        style: { display: "none", color: "green", marginTop: "10px" },
+                        children: "Your application has been submitted successfully!"
+                    })
+                ]
+            })
+        })
+    ]
+})
+]
                                   })
                               })
                           })
