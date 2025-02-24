@@ -972,7 +972,58 @@
                                       }), (0, l.jsx)("h4", {
                                           children: "Let’s See More About Grizzly Public School !"
                                       }), (0, l.jsx)("div", {
+    children: [(0, l.jsx)("div", {
     children: [
+        (0, l.jsx)("div", {
+            id: "stickySocial",
+            className: "sticky_social",
+            style: {
+                position: "fixed",
+                bottom: "20px",
+                left: "1px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                gap: "10px",
+                padding: "10px",
+                borderRadius: "10px",
+                zIndex: "1000",
+                background: "transparent"
+            },
+            children: [
+                { platform: "Facebook", url: "https://www.facebook.com/grizzlyvidyalayatelaiya/", icon: "<i class='fab fa-facebook-f'></i>", color: "#1877F2" },
+                { platform: "WhatsApp", url: "https://wa.me/7070098751/", icon: "<i class='fab fa-whatsapp'></i>", color: "#25D366" },
+                { platform: "Instagram", url: "https://www.instagram.com/grizzly.vidyalaya/grizzly.vidyalaya/", icon: "<i class='fab fa-instagram'></i>", color: "#C13584" },
+                { platform: "LinkedIn", url: "https://www.linkedin.com/company/grizzlyvidyalaya/", icon: "<i class='fab fa-linkedin-in'></i>", color: "#0077B5" }
+            ].map((social) =>
+                (0, l.jsx)("a", {
+                    href: social.url,
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    style: {
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        backgroundColor: social.color,
+                        padding: "10px",
+                        borderRadius: "50%",
+                        textDecoration: "none",
+                        fontSize: "20px",
+                        width: "40px",
+                        height: "40px",
+                        boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)",
+                        transition: "transform 0.3s",
+                        color: "#fff"
+                    },
+                    onMouseOver: (e) => e.target.style.transform = "scale(1.1)",
+                    onMouseOut: (e) => e.target.style.transform = "scale(1)",
+                    dangerouslySetInnerHTML: { __html: social.icon }
+                })
+            )
+        })
+    ]
+})
+,
         (0, l.jsx)("a", {
             className: "common_btn",
             href: "javascript:void(0);",
