@@ -462,7 +462,7 @@
                               className: "modal-video-movie-wrap",
                               children: (0, l.jsx)("iframe", {
                                   className: "video-modal-iframe",
-                                  src: "https://www.youtube.com/embed/rWfzDx3Uhxk?si=DlE95UWvwE07JAPk",
+                                  src: "https://www.youtube.com/embed/AW2jU12O0bI?si=_YX-4Q-U8rhmgi1j",
                                   allow: "autoplay; accelerometer; encrypted-media; gyroscope; picture-in-picture",
                                   allowFullScreen: !0
                               })
@@ -516,12 +516,12 @@
                           children: (0, l.jsx)("img", {
                               src: i,
                               alt: "Eduor",
-                              className: "img-fluid w-100"
+                              className: "img-fluid navbar-logo"
                           })
                       }),(0, l.jsx)("img", {  
             src: "new_logo.png",  // Replace with the actual path of the second logo
-            alt: "Eduor",
-            className: "img-fluid w-100 logo-size ms-3" // Adds spacing between the images
+            alt: "Grizzly",
+            className: "img-fluid navbar-logo logo-size ms-3" // Adds spacing between the images
         }),
                        d ? (0, l.jsx)("button", {
                           className: "navbar-toggler",
@@ -996,9 +996,9 @@
                 background: "transparent"
             },
             children: [
-                { platform: "Facebook", url: "https://www.facebook.com/grizzlyvidyalayatelaiya/", icon: "<i class='fab fa-facebook-f'></i>", color: "#1877F2" },
+                { platform: "Facebook", url: "https://www.facebook.com/GrizzlyKidsJMT", icon: "<i class='fab fa-facebook-f'></i>", color: "#1877F2" },
                 { platform: "WhatsApp", url: "https://wa.me/7070098751/", icon: "<i class='fab fa-whatsapp'></i>", color: "#25D366" },
-                { platform: "Instagram", url: "https://www.instagram.com/grizzly.vidyalaya/grizzly.vidyalaya/", icon: "<i class='fab fa-instagram'></i>", color: "#C13584" },
+                { platform: "Instagram", url: "https://www.instagram.com/grizzlykids_/", icon: "<i class='fab fa-instagram'></i>", color: "#C13584" },
                 { platform: "LinkedIn", url: "https://www.linkedin.com/company/grizzlyvidyalaya/", icon: "<i class='fab fa-linkedin-in'></i>", color: "#0077B5" }
             ].map((social) =>
                 (0, l.jsx)("a", {

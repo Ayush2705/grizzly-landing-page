@@ -29120,6 +29120,21 @@ button {
     -o-transition: all .3s linear
 }
 
+/* Main logo */
+.navbar-logo {
+    max-width: 120px; /* Default size for desktop */
+    height: auto;
+}
+
+/* Make logo smaller for mobile */
+@media (max-width: 768px) {
+    .navbar-logo {
+        max-width: 80px; /* Adjust for smaller screens */
+    }
+}
+
+
+
 .main_menu .navbar-brand {
     margin: 0;
     max-width: 180px
