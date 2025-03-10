@@ -979,54 +979,233 @@
                                       }), (0, l.jsx)("div", {
     children: [(0, l.jsx)("div", {
     children: [
-        (0, l.jsx)("div", {
-            id: "stickySocial",
-            className: "sticky_social",
+    // Sticky Social Media (Left Bottom)
+    (0, l.jsx)("div", {
+        id: "stickySocial",
+        className: "sticky_social",
+        style: {
+            position: "fixed",
+            bottom: "20px",
+            left: "1px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "10px",
+            padding: "10px",
+            borderRadius: "10px",
+            zIndex: "1000",
+            background: "transparent"
+        },
+        children: [
+            { platform: "Facebook", url: "https://www.facebook.com/GrizzlyKidsJMT", icon: "<i class='fab fa-facebook-f'></i>", color: "#1877F2" },
+            { platform: "WhatsApp", url: "https://wa.me/9102990117/", icon: "<i class='fab fa-whatsapp'></i>", color: "#25D366" },
+            { platform: "Instagram", url: "https://www.instagram.com/grizzlykids_/", icon: "<i class='fab fa-instagram'></i>", color: "#C13584" },
+            { platform: "LinkedIn", url: "https://www.linkedin.com/company/grizzlyvidyalaya/", icon: "<i class='fab fa-linkedin-in'></i>", color: "#0077B5" }
+        ].map((social) =>
+            (0, l.jsx)("a", {
+                href: social.url,
+                target: "_blank",
+                rel: "noopener noreferrer",
+                style: {
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    backgroundColor: social.color,
+                    padding: "10px",
+                    borderRadius: "50%",
+                    textDecoration: "none",
+                    fontSize: "20px",
+                    width: "40px",
+                    height: "40px",
+                    boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)",
+                    transition: "transform 0.3s",
+                    color: "#fff"
+                },
+                onMouseOver: (e) => e.target.style.transform = "scale(1.1)",
+                onMouseOut: (e) => e.target.style.transform = "scale(1)",
+                dangerouslySetInnerHTML: { __html: social.icon }
+            })
+        )
+    }),
+
+    // Floating Enquire Now Button (Right Bottom)
+    (0, l.jsx)("button", {
+        id: "queryButton",
+        style: {
+            position: "fixed",
+            bottom: "20px",
+            right: "20px",
+            width: "140px", // Adjusted for text
+            height: "50px",
+            backgroundColor: "#FF7F46",
+            color: "#fff",
+            border: "none",
+            borderRadius: "25px", // Rounded rectangle
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            cursor: "pointer",
+            fontSize: "16px",
+            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.2)",
+            zIndex: "9999" // Ensures it's above everything
+        },
+        onClick: () => document.getElementById("popupFormContainer").style.display = "flex",
+        children: "Enquire Now"
+    }),
+
+    // Popup Form (Appears in Center)
+    (0, l.jsx)("div", {
+        id: "popupFormContainer",
+        style: {
+            position: "fixed",
+            top: "0",
+            left: "0",
+            width: "100%",
+            height: "100%",
+            background: "rgba(0, 0, 0, 0.5)",
+            display: "none",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: "1001"
+        },
+        children: (0, l.jsx)("div", {
             style: {
-                position: "fixed",
-                bottom: "20px",
-                left: "1px",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                gap: "10px",
-                padding: "10px",
+                background: "#fff",
+                padding: "20px",
+                width: "300px",
                 borderRadius: "10px",
-                zIndex: "1000",
-                background: "transparent"
+                textAlign: "left",
+                boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.3)"
             },
             children: [
-                { platform: "Facebook", url: "https://www.facebook.com/GrizzlyKidsJMT", icon: "<i class='fab fa-facebook-f'></i>", color: "#1877F2" },
-                { platform: "WhatsApp", url: "https://wa.me/9102990117/", icon: "<i class='fab fa-whatsapp'></i>", color: "#25D366" },
-                { platform: "Instagram", url: "https://www.instagram.com/grizzlykids_/", icon: "<i class='fab fa-instagram'></i>", color: "#C13584" },
-                { platform: "LinkedIn", url: "https://www.linkedin.com/company/grizzlyvidyalaya/", icon: "<i class='fab fa-linkedin-in'></i>", color: "#0077B5" }
-            ].map((social) =>
-                (0, l.jsx)("a", {
-                    href: social.url,
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                    style: {
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        backgroundColor: social.color,
-                        padding: "10px",
-                        borderRadius: "50%",
-                        textDecoration: "none",
-                        fontSize: "20px",
-                        width: "40px",
-                        height: "40px",
-                        boxShadow: "0 2px 5px rgba(0, 0, 0, 0.2)",
-                        transition: "transform 0.3s",
-                        color: "#fff"
+                (0, l.jsx)("h2", { children: "Contact Us" }),
+                (0, l.jsx)("form", {
+                    id: "queryForm",
+                    action: "https://formspree.io/f/myzeyepn",
+                    method: "POST",
+                    onSubmit: (e) => {
+                        e.preventDefault();
+
+                        let formData = new FormData(document.getElementById("queryForm"));
+
+                        fetch("https://formspree.io/f/myzeyepn", {
+                            method: "POST",
+                            body: formData,
+                            headers: {
+                                "Accept": "application/json"
+                            }
+                        })
+                        .then(response => {
+                            if (response.ok) {
+                                document.getElementById("successMessage").style.display = "block";
+
+                                setTimeout(() => {
+                                    document.getElementById("successMessage").style.display = "none";
+                                    document.getElementById("popupFormContainer").style.display = "none";
+                                }, 3000);
+                            } else {
+                                alert("Error submitting form. Please try again.");
+                            }
+                        })
+                        .catch(error => alert("Network Error. Try again later."));
                     },
-                    onMouseOver: (e) => e.target.style.transform = "scale(1.1)",
-                    onMouseOut: (e) => e.target.style.transform = "scale(1)",
-                    dangerouslySetInnerHTML: { __html: social.icon }
+                    children: [
+                        (0, l.jsx)("input", {
+                            type: "text",
+                            name: "name",
+                            placeholder: "Enter your name",
+                            required: true,
+                            style: {
+                                width: "100%",
+                                padding: "8px",
+                                margin: "5px 0",
+                                border: "1px solid #ccc",
+                                borderRadius: "5px"
+                            }
+                        }),
+
+                        // Dropdown for Class Selection
+                        (0, l.jsx)("select", {
+                            name: "class",
+                            required: true,
+                            style: {
+                                width: "100%",
+                                padding: "8px",
+                                margin: "5px 0",
+                                border: "1px solid #ccc",
+                                borderRadius: "5px"
+                            },
+                            children: [
+                                (0, l.jsx)("option", { value: "", disabled: true, selected: true, children: "Select Class" }),
+                                "PG", "Nursery", "LKG", "UKG", "Std. 1", "Std. 2", "Std. 3", "Std. 4", "Std. 5", "Std. 6", "Std. 7", "Std. 8"
+                            ].map(cls => (0, l.jsx)("option", { value: cls, children: cls }, cls))
+                        }),
+
+                        (0, l.jsx)("input", {
+                            type: "tel",
+                            name: "phone",
+                            placeholder: "Enter your phone number",
+                            required: true,
+                            pattern: "\\d{10}",
+                            title: "Enter a valid 10-digit phone number",
+                            style: {
+                                width: "100%",
+                                padding: "8px",
+                                margin: "5px 0",
+                                border: "1px solid #ccc",
+                                borderRadius: "5px"
+                            }
+                        }),
+
+                        // Success Message (Hidden by default)
+                        (0, l.jsx)("div", {
+                            id: "successMessage",
+                            style: {
+                                display: "none",
+                                color: "green",
+                                textAlign: "center",
+                                marginTop: "10px"
+                            },
+                            children: "Form submitted successfully!"
+                        }),
+
+                        (0, l.jsxs)("div", {
+                            style: { display: "flex", justifyContent: "space-between", marginTop: "15px" },
+                            children: [
+                                (0, l.jsx)("button", {
+                                    type: "submit",
+                                    style: {
+                                        padding: "8px 12px",
+                                        backgroundColor: "#28a745",
+                                        color: "#fff",
+                                        border: "none",
+                                        cursor: "pointer",
+                                        borderRadius: "5px"
+                                    },
+                                    children: "Submit"
+                                }),
+                                (0, l.jsx)("button", {
+                                    type: "button",
+                                    style: {
+                                        padding: "8px 12px",
+                                        backgroundColor: "#dc3545",
+                                        color: "#fff",
+                                        border: "none",
+                                        cursor: "pointer",
+                                        borderRadius: "5px"
+                                    },
+                                    onClick: () => document.getElementById("popupFormContainer").style.display = "none",
+                                    children: "Close"
+                                })
+                            ]
+                        })
+                    ]
                 })
-            )
+            ]
         })
-    ]
+    })
+]
+
 })
 ,
         (0, l.jsx)("a", {
