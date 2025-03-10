@@ -151,7 +151,7 @@
                                           children: "Becomes"
                                       }), " Adventure!"]
                                   }), (0, l.jsx)("p", {
-                                      children: "At Grizzly Public School, learning is not just a process — it’s an adventure. Guided by the belief that ''Education is life itself,'' we create a dynamic environment where curiosity, creativity, and exploration thrive. Our state-of-the-art infrastructure and innovative tools transform every lesson into an exciting journey "
+                                      children: "At Grizzly kids a unit of grizzly public school, learning is not just a process — it’s an adventure. Guided by the belief that ''Education is life itself,'' we create a dynamic environment where curiosity, creativity, and exploration thrive. Our state-of-the-art infrastructure and innovative tools transform every lesson into an exciting journey "
                                   }), (0, l.jsxs)("ul", {
                                       className: "d-flex flex-wrap align-items-center",
                                       children: [(0, l.jsx)("li", {
@@ -331,7 +331,7 @@
                       className: s,
                       children: (0, l.jsxs)("div", {
                           className: "container",
-                          children: [(0, l.jsx)("div", {
+                          /* children: [(0, l.jsx)("div", {
                               className: "row",
                               children: (0, l.jsx)("div", {
                                   className: "col-xl-6 col-md-8 col-lg-6 m-auto wow fadeInUp",
@@ -348,7 +348,7 @@
                               startIndex: i,
                               endIndex: a,
                               eventData: n
-                          })]
+                          })] */
                       })
                   })
               }
@@ -831,9 +831,9 @@
                               }), (0, l.jsx)("i", {
                                   className: "fas fa-star fill"
                               }), (0, l.jsx)("i", {
-                                  className: "fas fa-star"
+                                  className: "fas fa-star fill"
                               }), (0, l.jsx)("i", {
-                                  className: "fas fa-star"
+                                  className: "fas fa-star fill"
                               })]
                           })]
                       })
@@ -997,7 +997,7 @@
             },
             children: [
                 { platform: "Facebook", url: "https://www.facebook.com/GrizzlyKidsJMT", icon: "<i class='fab fa-facebook-f'></i>", color: "#1877F2" },
-                { platform: "WhatsApp", url: "https://wa.me/7070098751/", icon: "<i class='fab fa-whatsapp'></i>", color: "#25D366" },
+                { platform: "WhatsApp", url: "https://wa.me/9102990117/", icon: "<i class='fab fa-whatsapp'></i>", color: "#25D366" },
                 { platform: "Instagram", url: "https://www.instagram.com/grizzlykids_/", icon: "<i class='fab fa-instagram'></i>", color: "#C13584" },
                 { platform: "LinkedIn", url: "https://www.linkedin.com/company/grizzlyvidyalaya/", icon: "<i class='fab fa-linkedin-in'></i>", color: "#0077B5" }
             ].map((social) =>
