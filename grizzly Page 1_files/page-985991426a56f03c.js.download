@@ -612,7 +612,7 @@
                                   children: [
                                       (0, l.jsx)("a", {
                                           className: "nav-link",
-                                          href: "#",
+                                          href: "#home",
                                           children: "Home"
                                       })
                                   ]
@@ -621,7 +621,7 @@
                                   className: "nav-item",
                                   children: (0, l.jsx)(o, {
                                       className: "nav-link",
-                                      href: "#",
+                                      href: "#aboutus",
                                       children: "about us"
                                   })
                               }),
@@ -631,7 +631,7 @@
                                   children: [
                                       (0, l.jsx)("a", {
                                           className: "nav-link",
-                                          href: "#",
+                                          href: "#Categories",
                                           children: "Categories"
                                       })
                                   ]
@@ -642,7 +642,7 @@
                                   children: [
                                       (0, l.jsxs)("a", {
                                           className: "nav-link",
-                                          href: "#",
+                                          href: "#blog",
                                           children: "Blog"
                                       })
                                   ]
@@ -651,21 +651,21 @@
                               (0, l.jsx)("li", {
                                   className: "nav-item",
                                   children: (0, l.jsx)(o, {
-                                      href: "#",
+                                      href: "#contact",
                                       children: "contact"
                                   })
                               }), i ? null : (0, l.jsx)("li", {
                                   className: "nav-item",
                                   children: (0, l.jsx)("a", {
                                       className: "nav-link common_btn",
-                                      href: "#",
+                                      href: "#learnmore",
                                       children: "LEARN MORE"
                                   })
                               })
                           ]
                       }), i ? (0, l.jsx)("a", {
                           className: "common_btn_2 ms-auto",
-                          href: "#",
+                          href: "#learnmore",
                           children: "learn more"
                       }) : null]
                   })
@@ -915,36 +915,42 @@
           }
       },
       36038: function(e, s, i) {
-          "use strict";
-          i.r(s);
-          var l = i(57437),
-              a = i(2265);
-          s.default = e => {
-              let {
-                  style: s
-              } = e, [i, n] = (0, a.useState)(!1);
-              (0, a.useEffect)(() => (window.addEventListener("scroll", c), () => {
-                  window.removeEventListener("scroll", c)
-              }), []);
-              let c = () => {
-                  let e = window.scrollY;
-                  e > 300 ? n(!0) : n(!1)
-              };
-              return (0, l.jsx)("div", {
-                  children: i && (0, l.jsxs)("div", {
-                      className: "tf__scroll_btn ".concat(s),
-                      role: "button",
-                      onClick: () => {
-                          window.scrollTo({
-                              top: 0,
-                              behavior: "smooth"
-                          })
-                      },
-                      children: [" ", "go to top", " "]
-                  })
-              })
-          }
-      },
+    "use strict";
+    i.r(s);
+    var l = i(57437),
+        a = i(2265);
+    s.default = e => {
+        let { style: s } = e, 
+            [i, n] = (0, a.useState)(!1);
+
+        let c = () => {
+            let e = window.scrollY;
+            n(e > 300);
+        };
+
+        (0, a.useEffect)(() => {
+            window.addEventListener("scroll", c);
+            return () => {
+                window.removeEventListener("scroll", c);
+            };
+        }, []);
+
+        return (0, l.jsx)("div", {
+            children: i && (0, l.jsxs)("div", {
+                className: "tf__scroll_btn ".concat(s),
+                role: "button",
+                onClick: () => {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+                },
+                children: [" ", (0, l.jsx)("i", { className: "fas fa-arrow-up", style: { transform: "rotate(0deg)" } }), " "] // Ensure correct rotation
+            })
+        });
+    };
+}
+,
       99998: function(e, s, i) {
           "use strict";
           i.r(s);
