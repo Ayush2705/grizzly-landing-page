@@ -1,0 +1,227 @@
+.card-details{
+    text-align: center;
+  }
+
+.service-card {
+  margin-top: 2rem;
+}
+  
+  .service-card-int {
+    height: 14rem;
+  }
+
+.blog-heading {
+    color: white;
+    /* font-family: DM Sans;
+    font-size: 2.625rem; */
+    /* font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    /* 3.28125rem */
+    /* text-transform: capitalize;  */
+
+    font-family: OldStandardTT-Bold;
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  
+  .blog-subheading {
+    color:gray;
+    font-family: DM Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    /* 1.74375rem */
+    letter-spacing: 0.01688rem;
+  }
+  
+  .blog-img {
+    width: 93%;
+  }
+  
+  .blog-card {
+    margin-right: 2%;
+    border-radius: 0.625rem;
+    background: #0C0C0D;
+  }
+  .card-details{
+    text-align: center;
+  }
+
+  .blog-tag-btn {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    background: #18191B;
+  }
+  
+  .blog-card-heading {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    line-height: 155%;
+    letter-spacing: 0.01688rem;
+  }
+  
+  .blog-card-subheading {
+    color: grey;
+    font-family: DM Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%;
+    /* 1.74375rem */
+    letter-spacing: 0.01688rem;
+  }
+  
+  .blog-heading-text {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    font-family: Poppins-Medium;
+  }
+  
+  .blog-mr {
+    margin-right: 5rem;
+  }
+
+  .justify-content-center {
+    justify-content: center !important;
+}
+
+.blog-author-text {
+    color: grey;
+}
+
+#Blog.container {
+  max-width: none;
+  width: 100%;
+}
+
+
+
+
+/********* Blog page CSS *************/
+
+
+:root {
+    --bg-size: 100% 100%;
+    --main_color: #fff;
+    --title: 'Poppins-Bold';
+    --font-para: 'Poppins-ExtraLight';
+    --btn-color: #bbe1fa;
+    --btn-font-color: #000;
+    --btn-font: 1.5rem;
+    --eff: .3s all ease;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+p,
+label,
+input::placeholder {
+    font-size: 1.9rem;
+    line-height: 170%;
+    color: #6c757d;
+}
+
+figure img,
+.fab,
+.fas {
+    transition: var(--eff);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background: hsl(84, 3%, 94%);
+}
+
+.blog-align{
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.right_side_img{
+  max-width: 60%;
+  padding-bottom: 2%;
+}
+
+
+/*left side vblog stykle start*/
+.blog_left__div h1 {
+    font-family: Poppins-Bold;
+    font-weight: bold;
+    font-size: 3rem;
+    color:#18191B;
+}
+
+.blog_left__div .blog_title {
+  font-family: Poppins-ExtraLight;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.blog_left__div .blog_title span {
+  color: #1b262c;
+}
+
+.blog_left__div p span {
+  font-family: Poppins-SemiBold;
+  color: #1b262c;
+}
+
+
+/* .thapa_show {
+    margin: 20px 0;
+    transition: var(--eff);
+    display: block;
+} */
+
+
+
+
+/*responsive code start*/
+@media(max-width:998px) {
+    html {
+        font-size: 60%;
+    }
+
+    .left_div_blog {
+        margin: 3rem 0;
+    }
+
+    p,
+    label,
+    input::placeholder {
+        font-size: 2.2rem;
+    }
+
+    :root {
+        --btn-font: 2rem;
+    }
+
+    .main_header h2 {
+        font-size: 4.5rem;
+    }
+
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+
+    .left_div_blog {
+        margin: 3rem 0;
+    }
+
+}
