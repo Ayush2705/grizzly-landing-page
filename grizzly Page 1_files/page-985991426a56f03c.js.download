@@ -60,6 +60,7 @@
                               })]
                           })
                       }), (0, l.jsxs)("div", {
+                          id : "aboutus",
                           className: "row",
                           children: [(0, l.jsx)("div", {
                               className: "col-xl-6 col-md-9 col-lg-6 wow fadeInLeft",
@@ -612,7 +613,7 @@
                                   children: [
                                       (0, l.jsx)("a", {
                                           className: "nav-link",
-                                          href: "#home",
+                                          href: "",
                                           children: "Home"
                                       })
                                   ]
@@ -631,7 +632,7 @@
                                   children: [
                                       (0, l.jsx)("a", {
                                           className: "nav-link",
-                                          href: "#Categories",
+                                          href: "#categories",
                                           children: "Categories"
                                       })
                                   ]
@@ -654,20 +655,9 @@
                                       href: "#contact",
                                       children: "contact"
                                   })
-                              }), i ? null : (0, l.jsx)("li", {
-                                  className: "nav-item",
-                                  children: (0, l.jsx)("a", {
-                                      className: "nav-link common_btn",
-                                      href: "#learnmore",
-                                      children: "LEARN MORE"
-                                  })
-                              })
+                              }), i ? null : null
                           ]
-                      }), i ? (0, l.jsx)("a", {
-                          className: "common_btn_2 ms-auto",
-                          href: "#learnmore",
-                          children: "learn more"
-                      }) : null]
+                      }), i ? null : null]
                   })
               }
       },
