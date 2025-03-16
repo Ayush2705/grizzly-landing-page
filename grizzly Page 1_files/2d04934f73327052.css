@@ -30226,11 +30226,11 @@ button {
 
 .tf__faq_accordion .accordion-header button:before {
     position: absolute;
-    content: "\f058";
-    color: var(--colorWhite);
+    content: "\f00c"; /* Checkmark icon */
+    color: white;
     background: var(--colorPrimary);
-    font-family: Font Awesome\ 6 Pro;
-    font-weight: 600;
+    font-family: "Font Awesome 6 Free"; /* Ensure using the correct FontAwesome version */
+    font-weight: 900; /* Solid icons */
     top: 14px;
     left: 23px;
     font-size: 12px;
@@ -30239,10 +30239,6 @@ button {
     height: 25px;
     text-align: center;
     line-height: 25px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%
 }
 
 .accordion-item.orange button:before {

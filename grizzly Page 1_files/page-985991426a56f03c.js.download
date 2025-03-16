@@ -393,9 +393,6 @@
                                       }), (0, l.jsx)("h2", {
                                           children: "Got Questions? Here Are Your Answers - FAQ"
                                       })]
-                                  }), (0, l.jsxs)("p", {
-                                      className: "description",
-                                      children: ["Business tailored it design, management & support services business agency elit, sed do eiusmod tempor.", " "]
                                   }), (0, l.jsx)("div", {
                                       className: "tf__faq_accordion",
                                       children: (0, l.jsx)("div", {
