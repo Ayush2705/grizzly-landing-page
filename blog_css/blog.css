@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&amp;family=Rubik:wght@300;400;500;600;700;800;900&amp;display=swap");
+
+
+
+:root {
+  --paraFont: "Rubik", sans-serif !important;
+  --headingFont: "Montserrat", sans-serif !important;
+}
+
+
 .card-details{
     text-align: center;
   }
@@ -19,7 +29,6 @@
     line-height: 125%;
     /* 3.28125rem */
     /* text-transform: capitalize;  */
-
     font-family: OldStandardTT-Bold;
     font-size: 52px;
     text-align: center;
@@ -98,6 +107,9 @@
   width: 100%;
 }
 
+ul.d-flex li a i {
+  font-size: 1.5em; /* Increase size for a bold effect */
+}
 
 
 
@@ -107,8 +119,8 @@
 :root {
     --bg-size: 100% 100%;
     --main_color: #fff;
-    --title: 'Poppins-Bold';
-    --font-para: 'Poppins-ExtraLight';
+    --title: 'Rubik';
+    --font-para: 'Rubik';
     --btn-color: #bbe1fa;
     --btn-font-color: #000;
     --btn-font: 1.5rem;
@@ -122,6 +134,7 @@ html {
 p,
 label,
 input::placeholder {
+    font-family: 'Rubik', sans-serif;
     font-size: 1.9rem;
     line-height: 170%;
     color: #6c757d;
@@ -149,25 +162,29 @@ body {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-
+.font-weight-bold{
+  padding-right: 0.5%;
+  padding-left: 0.5%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
 .right_side_img{
   max-width: 60%;
   padding-bottom: 2%;
 }
 
-
 /*left side vblog stykle start*/
 .blog_left__div h1 {
-    font-family: Poppins-Bold;
+    font-family: Rubik;
     font-weight: bold;
     font-size: 3rem;
     color:#18191B;
 }
 
 .blog_left__div .blog_title {
-  font-family: Poppins-ExtraLight;
-  font-weight: 400;
-  font-size: 2.2rem;
+  font-family: Rubik;
+  font-weight: 100;
+  font-size: 2.5rem;
 }
 
 .blog_left__div .blog_title span {
@@ -175,7 +192,7 @@ body {
 }
 
 .blog_left__div p span {
-  font-family: Poppins-SemiBold;
+  font-family: Rubik;
   color: #1b262c;
 }
 
