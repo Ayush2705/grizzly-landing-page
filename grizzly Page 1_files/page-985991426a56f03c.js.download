@@ -721,7 +721,7 @@
                               className: "tf__single_blog_text",
                               children: [(0, l.jsx)(n(), {
                                   className: "category ".concat(e.color),
-                                  href: "/blog",
+                                  href: "/blog/".concat(e.slug),
                                   children: e.category
                               }), (0, l.jsx)(n(), {
                                   className: "title",
