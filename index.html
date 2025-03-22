@@ -71,9 +71,23 @@
     }
     
     .footer-logo-size {
-        max-width: 80px; /* Set this to match the first logo's dimensions */
-        height: auto; /* Maintain aspect ratio */
+    max-width: 80px;
+    height: auto;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .footer-logo-size {
+        max-width: 60px; /* Reduce size on tablets */
     }
+}
+
+@media (max-width: 480px) {
+    .footer-logo-size {
+        max-width: 50px; /* Further reduce size on mobile */
+    }
+}
+
 
     </style>
     <!-- Meta Pixel Code -->
