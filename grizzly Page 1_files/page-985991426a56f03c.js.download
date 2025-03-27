@@ -640,7 +640,7 @@
                                   children: [
                                       (0, l.jsx)("a", {
                                           className: "nav-link",
-                                          href: "./blog/your corner.html",
+                                          href: "./your corner.html",
                                           children: "Your Corner"
                                       })
                                   ]
