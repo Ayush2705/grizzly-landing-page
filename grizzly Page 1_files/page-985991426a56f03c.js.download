@@ -638,6 +638,17 @@
                               (0, l.jsxs)("li", {
                                   className: "nav-item",
                                   children: [
+                                      (0, l.jsx)("a", {
+                                          className: "nav-link",
+                                          href: "./blog/your corner.html",
+                                          children: "Your Corner"
+                                      })
+                                  ]
+                              }),
+
+                              (0, l.jsxs)("li", {
+                                  className: "nav-item",
+                                  children: [
                                       (0, l.jsxs)("a", {
                                           className: "nav-link",
                                           href: "#blog",
