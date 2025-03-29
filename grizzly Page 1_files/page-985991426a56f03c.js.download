@@ -640,7 +640,7 @@
                                   children: [
                                       (0, l.jsx)("a", {
                                           className: "nav-link",
-                                          href: "./your corner.html",
+                                          href: "./your-corner.html",
                                           children: "Your Corner"
                                       })
                                   ]
@@ -1083,130 +1083,144 @@
                 boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.3)"
             },
             children: [
-                (0, l.jsx)("h2", { children: "Contact Us" }),
-                (0, l.jsx)("form", {
-                    id: "queryForm",
-                    action: "https://formspree.io/f/myzeyepn",
-                    method: "POST",
-                    onSubmit: (e) => {
-                        e.preventDefault();
+    (0, l.jsx)("h2", { children: "Contact Us" }),
+    (0, l.jsx)("form", {
+        id: "queryForm",
+        action: "https://formspree.io/f/myzeyepn",
+        method: "POST",
+        onSubmit: (e) => {
+            e.preventDefault();
 
-                        let formData = new FormData(document.getElementById("queryForm"));
+            let formData = new FormData(document.getElementById("queryForm"));
 
-                        fetch("https://formspree.io/f/myzeyepn", {
-                            method: "POST",
-                            body: formData,
-                            headers: {
-                                "Accept": "application/json"
-                            }
-                        })
-                        .then(response => {
-                            if (response.ok) {
-                                document.getElementById("successMessage").style.display = "block";
+            fetch("https://formspree.io/f/myzeyepn", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "Accept": "application/json"
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById("successMessage").style.display = "block";
 
-                                setTimeout(() => {
-                                    document.getElementById("successMessage").style.display = "none";
-                                    document.getElementById("popupFormContainer").style.display = "none";
-                                }, 3000);
-                            } else {
-                                alert("Error submitting form. Please try again.");
-                            }
-                        })
-                        .catch(error => alert("Network Error. Try again later."));
-                    },
-                    children: [
-                        (0, l.jsx)("input", {
-                            type: "text",
-                            name: "name",
-                            placeholder: "Enter your name",
-                            required: true,
-                            style: {
-                                width: "100%",
-                                padding: "8px",
-                                margin: "5px 0",
-                                border: "1px solid #ccc",
-                                borderRadius: "5px"
-                            }
-                        }),
+                    setTimeout(() => {
+                        document.getElementById("successMessage").style.display = "none";
+                        document.getElementById("popupFormContainer").style.display = "none";
+                    }, 3000);
+                } else {
+                    alert("Error submitting form. Please try again.");
+                }
+            })
+            .catch(error => alert("Network Error. Try again later."));
+        },
+        children: [
+            (0, l.jsx)("input", {
+                type: "text",
+                name: "name",
+                placeholder: "Enter your name",
+                required: true,
+                style: {
+                    width: "100%",
+                    padding: "8px",
+                    margin: "5px 0",
+                    border: "1px solid #ccc",
+                    borderRadius: "5px"
+                }
+            }),
 
-                        // Dropdown for Class Selection
-                        (0, l.jsx)("select", {
-                            name: "class",
-                            required: true,
-                            style: {
-                                width: "100%",
-                                padding: "8px",
-                                margin: "5px 0",
-                                border: "1px solid #ccc",
-                                borderRadius: "5px"
-                            },
-                            children: [
-                                (0, l.jsx)("option", { value: "", disabled: true, selected: true, children: "Select Class" }),
-                                "PG", "Nursery", "LKG", "UKG", "Std. 1", "Std. 2", "Std. 3", "Std. 4", "Std. 5", "Std. 6", "Std. 7", "Std. 8"
-                            ].map(cls => (0, l.jsx)("option", { value: cls, children: cls }, cls))
-                        }),
+            (0, l.jsx)("select", {
+                name: "class",
+                required: true,
+                style: {
+                    width: "100%",
+                    padding: "8px",
+                    margin: "5px 0",
+                    border: "1px solid #ccc",
+                    borderRadius: "5px"
+                },
+                children: [
+                    (0, l.jsx)("option", { value: "", disabled: true, selected: true, children: "Select Class" }),
+                    "PG", "Nursery", "LKG", "UKG", "Std. 1", "Std. 2", "Std. 3", "Std. 4", "Std. 5", "Std. 6", "Std. 7", "Std. 8"
+                ].map(cls => (0, l.jsx)("option", { value: cls, children: cls }, cls))
+            }),
 
-                        (0, l.jsx)("input", {
-                            type: "tel",
-                            name: "phone",
-                            placeholder: "Enter your phone number",
-                            required: true,
-                            pattern: "\\d{10}",
-                            title: "Enter a valid 10-digit phone number",
-                            style: {
-                                width: "100%",
-                                padding: "8px",
-                                margin: "5px 0",
-                                border: "1px solid #ccc",
-                                borderRadius: "5px"
-                            }
-                        }),
+            (0, l.jsx)("input", {
+                type: "tel",
+                name: "phone",
+                placeholder: "Enter your phone number",
+                required: true,
+                pattern: "\\d{10}",
+                title: "Enter a valid 10-digit phone number",
+                style: {
+                    width: "100%",
+                    padding: "8px",
+                    margin: "5px 0",
+                    border: "1px solid #ccc",
+                    borderRadius: "5px"
+                }
+            }),
+            
+            // New Message Textarea
+            (0, l.jsx)("textarea", {
+                name: "message",
+                placeholder: "Enter your message",
+                required: true,
+                rows: 4,
+                style: {
+                    width: "100%",
+                    padding: "8px",
+                    margin: "5px 0",
+                    border: "1px solid #ccc",
+                    borderRadius: "5px"
+                }
+            }),
 
-                        // Success Message (Hidden by default)
-                        (0, l.jsx)("div", {
-                            id: "successMessage",
-                            style: {
-                                display: "none",
-                                color: "green",
-                                textAlign: "center",
-                                marginTop: "10px"
-                            },
-                            children: "Form submitted successfully!"
-                        }),
+            (0, l.jsx)("div", {
+                id: "successMessage",
+                style: {
+                    display: "none",
+                    color: "green",
+                    textAlign: "center",
+                    marginTop: "10px"
+                },
+                children: "Form submitted successfully!"
+            }),
 
-                        (0, l.jsxs)("div", {
-                            style: { display: "flex", justifyContent: "space-between", marginTop: "15px" },
-                            children: [
-                                (0, l.jsx)("button", {
-                                    type: "submit",
-                                    style: {
-                                        padding: "8px 12px",
-                                        backgroundColor: "#28a745",
-                                        color: "#fff",
-                                        border: "none",
-                                        cursor: "pointer",
-                                        borderRadius: "5px"
-                                    },
-                                    children: "Submit"
-                                }),
-                                (0, l.jsx)("button", {
-                                    type: "button",
-                                    style: {
-                                        padding: "8px 12px",
-                                        backgroundColor: "#dc3545",
-                                        color: "#fff",
-                                        border: "none",
-                                        cursor: "pointer",
-                                        borderRadius: "5px"
-                                    },
-                                    onClick: () => document.getElementById("popupFormContainer").style.display = "none",
-                                    children: "Close"
-                                })
-                            ]
-                        })
-                    ]
-                })
-            ]
+            (0, l.jsxs)("div", {
+                style: { display: "flex", justifyContent: "space-between", marginTop: "15px" },
+                children: [
+                    (0, l.jsx)("button", {
+                        type: "submit",
+                        style: {
+                            padding: "8px 12px",
+                            backgroundColor: "#28a745",
+                            color: "#fff",
+                            border: "none",
+                            cursor: "pointer",
+                            borderRadius: "5px"
+                        },
+                        children: "Submit"
+                    }),
+                    (0, l.jsx)("button", {
+                        type: "button",
+                        style: {
+                            padding: "8px 12px",
+                            backgroundColor: "#dc3545",
+                            color: "#fff",
+                            border: "none",
+                            cursor: "pointer",
+                            borderRadius: "5px"
+                        },
+                        onClick: () => document.getElementById("popupFormContainer").style.display = "none",
+                        children: "Close"
+                    })
+                ]
+            })
+        ]
+    })
+]
+
         })
     })
 ]
@@ -1288,7 +1302,7 @@
                                 name: "class",
                                 required: true,
                                 defaultValue: "",
-                                style: { borderRadius: "10px", padding: "8px", width: "100%", marginBottom: "10px" },
+                                style: { borderRadius: "10px", padding: "8px", textAlign: "Center", width: "100%", marginBottom: "10px" },
                                 children: [
                                     "PG", "Nursery", "LKG", "UKG", "Std. 1", "Std. 2", "Std. 3", "Std. 4", "Std. 5", "Std. 6", "Std. 7", "Std. 8"
                                 ].map((cls) => (0, l.jsx)("option", { value: cls, children: cls }, cls))
