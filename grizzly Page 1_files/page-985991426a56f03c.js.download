@@ -52,7 +52,7 @@
                                               children: "At Grizzly Public School, we believe in the power of flexibility to shape each student’s unique journey. Our curriculum, aligned with the National Education Policy (NEP) and the National Curriculum Framework (NCF), encourages curiosity, experiential learning, and critical thinking."
                                           })]
                                       }), (0, l.jsx)("a", {
-                                          href: "#",
+                                          href: "./introduction.html",
                                           className: "common_btn",
                                           children: "read more"
                                       })]
@@ -158,7 +158,7 @@
                                       children: [(0, l.jsx)("li", {
                                           children: (0, l.jsx)(r(), {
                                               className: "common_btn",
-                                              href: "#",
+                                              href: "./introduction.html",
                                               children: "Read More"
                                           })
                                       }), (0, l.jsx)("li", {

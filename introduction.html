@@ -51,44 +51,384 @@
             margin: 0;
             font-size: 28px;
         }
-        
-        table {
-            width: 60%;
-            border-collapse: collapse;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            overflow: hidden;
-            margin: 20px auto;
+        /* .container p
+        {
+            text-align: center ;
+            display: flex;
+        } */
+        .hero-section{
+            text-align: center ;
+            display:contents ;
+            margin: auto;
+            padding: 20px;
+            align-items: center;
+            max-width: 50%;
         }
-        th, td {
-            border: 1px solid black;
-            padding: 12px;
-            text-align: center;
-            font-size: 18px;
-        }
-        th {
-            background-color: #f2f2f2;
-            color: #333;
-        }
-        .download-link a {
-            display: inline-block;
-            padding: 8px 14px;
-            background-color: #FF7F46;
+    
+    .goals-section {
+            max-width: 90%;
+            margin: 50px auto;
+            padding: 20px;
+            background: #4D89FF;
             color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
-            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .download-link a:hover {
-            background-color: #E65100;
+        .goals-section h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
         }
-        .tf__banner_text P {
-            padding-left: 40px;
-            padding-right: 40px ;
+        .goal {
+            display: flex;
+            align-items: center;
+            background: #6A9BFF;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .goal i {
+            font-size: 20px;
+            margin-right: 15px;
+            color: #ffd700;
+        }
+        .goal p {
+            margin: 0;
+            font-size: 16px;
+            color: #f9f9f9;
+        }
+        @media (max-width: 600px) {
+            .goals-section {
+                padding: 15px;
+            }
+            .tf__banner_text{
+                margin-top: 60px;
+            }
+            .goal {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .goal i {
+                margin-bottom: 10px;
+            }
         }
 
+        .mission-section {
+            max-width: 90%;
+            margin: 30px auto;
+            padding: 20px;
+            background: #FD7E47;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .mission-section h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .mission {
+            display: flex;
+            align-items: center;
+            background: #FF996B;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .mission i {
+            font-size: 20px;
+            margin-right: 15px;
+            color: #ffd700;
+        }
+        .mission p {
+            margin: 0;
+            font-size: 16px;
+            color: #f9f9f9;
+        }
+        @media (max-width: 600px) {
+            .mission-section {
+                padding: 15px;
+            }
+            .tf__banner_text{
+                margin-top: 60px;
+            }
+            .mission {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .mission i {
+                margin-bottom: 10px;
+            }
+        }
+
+        .vission-section {
+            max-width: 90%;
+            margin: 30px auto;
+            padding: 20px;
+            background: #7A41ED;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .vission-section h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .vission {
+            display: flex;
+            align-items: center;
+            background: #A578FF;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .vission i {
+            font-size: 20px;
+            margin-right: 15px;
+            color: #ffd700;
+        }
+        .vission p {
+            margin: 0;
+            font-size: 16px;
+            color: #f9f9f9;
+        }
+        @media (max-width: 600px) {
+            .vission-section {
+                padding: 15px;
+            }
+            .vission {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .vission i {
+                margin-bottom: 10px;
+            }
+            .table-section table {
+                font-size: 0.9rem;
+                /* padding: auto; */
+                /* margin: auto; */
+            }
+            .message-hero{
+                max-width: 85%;
+                margin: auto
+            }
+        }
+
+        .message-hero{
+                max-width: 95%;
+                margin: auto
+            }
+
+        .container1 {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .team-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .team-details {
+            text-align: left;
+            max-width: auto;
+        }
+        .team-details h2 {
+            color: black;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .info-box {            
+            padding: 10px;
+            border-radius: 10px;
+            border: 0.2px solid whitesmoke;
+            margin-bottom: 10px;
+            font-size: 2rem;
+            color: black;
+        }
+
+        .message-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .message-card {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            width: 45%;
+            min-width: 280px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .message-card img {
+            max-width: 80px;
+            max-height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .message-card h3 {
+            font-size: 20px;
+            /* margin-bottom: 5px; */
+        }
+        .message-card h4{
+            margin-bottom: 10px
+        }
+        .message-card p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .message-section {
+            padding: 20px;
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        .message_text h2{
+            font-size: 50px;
+            font-weight: 700;
+            color: var(--colorBlack);
+            text-align: center;
+            padding-top: 0% !important;
+        }
+        .message_text h4{
+            font-size: 3.5rem;
+            padding: 0%;
+            margin: 0%;
+            text-align: center;
+        }
+
+
+        .table-section {
+            padding: 20px;
+            /* margin-top: 20px; */
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+        .table-section table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            color: black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .table-section th, .table-section td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .table-section th {
+            background: #007bff;
+            color: white;
+        }
+        .backg{
+            background: #F9F9F9;
+            padding: 10px;
+        }
+
+        .about1 {
+            padding: 20px;
+            /* margin-top: 20px; */
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+        .countainer2{
+            padding: 10px;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            margin: 5px;
+            /* color: white; */
+
+        }
+        .countainer2 p{
+            color: white;
+
+        }
+
+        .about1 ul{
+            font-size: 2rem;
+            margin: auto;
+            padding: 0%;
+            text-align: left;
+            /* border: 1px solid #007bff; */
+        }
+
+        .about-section {
+            max-width: 90%;
+            margin: 50px auto;
+            padding: 20px;
+            background: #FF6565;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .about-section h2 {
+            text-align: center;
+            font-size: 28px;
+            /* margin-bottom: 20px; */
+        }
+        .about {
+            display: flex;
+            align-items: center;
+            background: #FF7C7D;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .about i {
+            font-size: 20px;
+            margin-right: 15px;
+            color: #ffd700;
+        }
+        .about p {
+            margin: 0;
+            font-size: 16px;
+            color: #f9f9f9;
+        }
+        @media (max-width: 600px) {
+            .about-section {
+                padding: 15px;
+            }
+            .tf__banner_text{
+                margin-top: 60px;
+            }
+            .about {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .about i {
+                margin-bottom: 10px;
+            }
+        }
+
+        .gps-section {
+            max-width: 90%;
+            margin: 50px auto;
+            padding: 20px;
+            background: #BDB954;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .gps-section h2 {
+            text-align: center;
+            font-size: 28px;
+            /* margin-bottom: 20px; */
+        }
     </style>
     <script src="./grizzly Page 1_files/page-985991426a56f03c.js.download" async=""></script>
     <script src="./grizzly Page 1_files/6500-99c78925d121b9af.js.download" async=""></script>
@@ -119,7 +459,7 @@
                 <li class="nav-item"><a class="nav-link" href="./../index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="./../index.html">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="./../index.html">Categories</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Your Corner</a></li>
+                <li class="nav-item"><a class="nav-link" href="./your-corner.html">Your Corner</a></li>
                 <li class="nav-item"><a class="nav-link" href="./../index.html">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="./../index.html">Contact</a></li>
             </ul>
@@ -130,16 +470,212 @@
     <!-- <h1>.</h1> -->
     <!-- <section class="tf__banner"> -->
         <!-- <div class="container"> -->
-            <div class="row">
-                <!-- <div class="col-xl-7 col-lg-8"> -->
-                    <div class="tf__banner_text wow ">
+            <div class="hero-section bg">
+                <!-- <div class="col-lg-11"> -->
+                    <div class="tf__banner_text ">
                         <h1>Where Learning <span>Becomes</span> Adventure!</h1>
-                        <p>At Grizzly Public School, learning is not just a process — it’s an adventure. Guided by the belief that "Education is life itself," we create a dynamic environment where curiosity, creativity, and exploration thrive. Our state-of-the-art infrastructure and innovative tools transform every lesson into an exciting journey — from hands-on experiments to artistic expression and cultural performances. Beyond academics, our sports events and personality development programs inspire confidence, leadership, and growth. At Grizzly, every child is encouraged to embrace challenges, "chart their own path," and become a pioneer of tomorrow’s world!</p>
-                        </div>
+                    </div>
+                    <div class="message-hero">
+                    <p>At Grizzly Public School, learning is not just a process — it’s an adventure. Guided by the belief that "Education is life itself," we create a dynamic environment where curiosity, creativity, and exploration thrive. Our state-of-the-art infrastructure and innovative tools transform every lesson into an exciting journey — from hands-on experiments to artistic expression and cultural performances. Beyond academics, our sports events and personality development programs inspire confidence, leadership, and growth. At Grizzly, every child is encouraged to embrace challenges, "chart their own path," and become a pioneer of tomorrow’s world!</p>
+                    </div>
+                <!-- </div> -->
+            </div>
+            <div class="goals-section">
+                <h2><strong> Goals</strong></h2>
+                <div class="goal">
+                    <i class="fas fa-book"></i>
+                    <p>To impart quality education along with moral values to face this competitive world.</p>
+                </div>
+                <div class="goal">
+                    <i class="fas fa-users"></i>
+                    <p>To develop qualities of leadership, self-respect, and human values.</p>
+                </div>
+                <div class="goal">
+                    <i class="fas fa-star"></i>
+                    <p>To inculcate discipline, self-dependence, excellent character, and respect for all.</p>
+                </div>
+                <div class="goal">
+                    <i class="fas fa-flag"></i>
+                    <p>To produce ideal citizens with excellent competence, high moral values, and commitment to society and the nation.</p>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="mission-section">
+                <h2><strong> Mission</strong></h2>
+                <div class="mission">
+                    <i class="fas fa-user-graduate"></i>
+                    <p>Empowering every student with the skills and knowledge required to cope with the competitive challenges of the complex world.</p>
+                </div>
+                <div class="mission">
+                    <i class="fas fa-handshake"></i>
+                    <p>Strengthen collaboration between the school, families, and community.</p>
+                </div>
+                <div class="mission">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>Create a safe and supportive environment.</p>
+                </div>
+                <div class="mission">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>Challenge students to become lifelong learners and productive, responsible citizens.</p>
+                </div>
+            </div>
+            <div class="vission-section">
+                <h2><strong> Vission</strong></h2>
+                <div class="vission">
+                    <i class="fas fa-eye"></i>
+                    <p>To emerge as one of the best schools in the state (Jharkhand) in the coming years.</p>
+                </div>                
+            </div>
+            <div class="container1 color1" >
+                <div class="team-section">
+                    <div class="team-details">
+                        <h2><strong>Our School Anthem</strong></h2>
+                        <div class="info-box"> <p>
+                            O’ Grizzly hats off to thee<br>
+                            To your colours true we shall ever be<br>
+                            Firm and strong united are we<br>
+                            Rah, Rah, Rah for Grizzly<br>
+                            Rah, Rah, Rah, Rah, Rah, Rah for GPS<br><br>
+                            Hails to the victors valiant<br>
+                            Hail to the conquering heroes<br>
+                            Hail, Hail the Grizzly<br>
+                            The leaders and the best<br>
+                            O, Grizzly hats off thee<br>
+                            To your colours true we shall ever be<br>
+                            Rah, Rah, Rah for Grizzly<br>
+                            Rah, Rah, Rah, Rah, Rah, Rah for GPS<br><br>
+                            Hail to the victors valiant<br>
+                            Hail to the conquering heroes<br>
+                            Hail, Hail the Grizzly<br>
+                            The champions and the best<br>
+                            O, Grizzly hats off thee<br>
+                            To your colours true we shall ever be<br>
+                            Rah, Rah, Rah for Grizzly<br>
+                            Rah, Rah, Rah, Rah, Rah, Rah for GPS
+                        </p></div>
+                        <!-- <div class="info-box"> <strong>About :</strong> As the principal of this school, I am committed to fostering academic excellence and a supportive community. Together, we shape the future of our students. </div> -->
+                        <!-- <div class="info-box"> <strong>Call:</strong> 12345678901 </div> -->
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="message_text ">
+                <h2>Messages</h2>
+            </div>
+            <div class="message-section">
+                <div class="message-card">
+                    <img src="./grizzly Page 1_files/963995396aa827c90e73a9aba25978d5939600aa-100x100.png" alt="Principal">
+                    <h3>MR. AVINASH SETH</h3>
+                    <h4>DIRECTOR</h4>
+                    <p>At Grizzly, we attempt to create an environment which is conducive to learning so that all children feel able and encouraged to become successful learners. Life is now a vicious competition and change is inevitable. Understanding this, the school is conscious that mere intellectual growth is not enough to excel in life. Thus, the overall school program aims to give the students maximum exposure and inculcates in them the skills and values that will help them to face challenges in future. Many of our students have excelled in Academics, Sports, and other extra-curricular activities at all levels and have brought laurels to the school. We are dedicated to fostering a love of learning, promoting critical thinking, and encouraging creativity and innovation. Our committed and highly qualified educators are passionate about providing engaging and student-centred instruction, ensuring that every student's unique talent and strength are recognized and nurtured. As the School Director, my commitment is to create a safe, inclusive, and stimulating learning environment where every student feels valued, supported, and inspired to excel. I encourage open communication and collaboration between students, parents, and staff, as we believe that strong partnerships are essential for the success of our school community.</p>
+                </div>
+                <div class="message-card">
+                    <img src="./grizzly Page 1_files/963995396aa827c90e73a9aba25978d5939600aa-100x100.png" alt="Vice-Principal">
+                    <h3>MR. MANISH KAPSIME</h3>
+                    <h4>DIRECTOR</h4>
+                    <p>I am delighted to address students, parents, faculty, and staff as the Director of Grizzly Public School. It is an honor to lead this institution towards educational excellence and holistic development. At Grizzly Public School, we are dedicated to fostering a dynamic learning environment that nurtures creativity, critical thinking, and character building. Our committed educators strive to impart knowledge that goes beyond textbooks, preparing students for real-world challenges. We believe in the power of collaboration between students, parents, and teachers. Together, we create a supportive ecosystem that enables every child to flourish academically and personally. Our modern facilities and innovative teaching methodologies enhance the learning experience. I encourage you to explore our school's website to discover the array of academic programs, extracurricular activities, and initiatives that shape Grizzly Public School's unique identity. As we embark on this journey together, let us ensure that our students become compassionate global citizens and lifelong learners.</p>
+                </div>
+                <div class="message-card">
+                    <img src="./grizzly Page 1_files/anna.png" alt="Vice-Principal">
+                    <h3>MRS. Niraja</h3>
+                    <h4>PRINCIPAL</h4>
+                    <p>"I cannot teach anybody anything; I can only make them think." – Socrates<br><br>
+                        At Grizzly Public School, we embrace this timeless wisdom by fostering an environment that encourages inquiry, research, and analytical thinking, instilling values and habits that last a lifetime. As a 21st-century institution, we aim to build confidence through a blend of academics and co-curricular activities, inspired by Paul Bear Bryant's belief: "It is not the will to win, but the will to prepare to win that makes the difference."<br><br>
+                        Learning at Grizzly is a wholesome journey, where every child is nurtured to achieve excellence. Our mission extends beyond academics, focusing on shaping well-rounded individuals equipped with the skills to lead a disciplined, happy, and successful life. Through multifaceted platforms, students are encouraged to discover their talents, whether in academics, sports, or extracurricular pursuits.<br><br>
+                        I am deeply grateful for the trust placed in me by the management to lead this institution toward excellence. With the collective efforts of our dedicated team, supportive parents, and enthusiastic students, I am confident we can pave the way for success and create a brighter future for every child at Grizzly Public School.<br><br>
+                        </p>
+                </div>
+            </div>
+            <div class="message_text ">
+                <h2>Local Managing Committee</h2>
+            </div>
+            <div class="table-section">
+                <table>
+                    <tr>
+                        <th>Sl.No.</th>
+                        <th>Name</th>
+                        <th>Designation</th>
+                        <th>Address</th>
+                        <th>Mobile No.</th>
+                    </tr>
+                    <tr><td>01</td><td>Mr. Manish Kapsime</td><td>Chairman</td><td>Near Railway Station, Jhumri Telaiya, Koderma</td><td>7070098754</td></tr>
+                    <tr><td>02</td><td>Mr. Avinash Seth</td><td>Vice Chairman</td><td>Patna Transport Gali, Jhumri Telaiya, Koderma</td><td>7070098753</td></tr>
+                    <tr><td>03</td><td>Mr. Prakash Gupta</td><td>CEO</td><td>Chandak Apartment, Near Samnto Kali Mandir, Jhumri Telaiya, Koderma</td><td>7070098772</td></tr>
+                    <tr><td>04</td><td>Mrs. Niraja</td><td>Member Secretary</td><td>Sainik School, Telaiya Dam, Koderma</td><td>9102990115</td></tr>
+                    <tr><td>05</td><td>Dr. Sanjeeta Kumari</td><td>Principal, Grizzly Colleg</td><td>Grizzly Vidyalaya, Telaiya Dam, Koderma</td><td>8409662763</td></tr>
+                    <tr><td>06</td><td>Mr. Binay Kumar Jha</td><td>Principal, Grizzly Vidyal</td><td>Grizzly Vidyalaya, Telaiya Dam, Koderma</td><td>7070098787</td></tr>
+                    <tr><td>07</td><td>Mrs. Anita</td><td>Teacher Representative</td><td>Gandhi High School Road, Jhumri Telaiya, Koderma</td><td>7070098792</td></tr>
+                    <tr><td>08</td><td>Mrs. Archana Chandan</td><td>Teacher Representative</td><td>Behind Police Station, Jhumri Telaiya, Koderma</td><td>8521604887</td></tr>
+                    <tr><td>09</td><td>Mr. Sudeep Sahay</td><td>Parents Representative</td><td>Bishunpur Road, Jhumri Telaiya, Koderma</td><td>9709170999</td></tr>
+                    <tr><td>10</td><td>Mr. Simranjeet Singh</td><td>Parents Representative</td><td>Near Jawahar Talkies, Jhumri Telaiya, Koderma</td><td>9709271698</td></tr>
+                </table>
+            </div>
+            <div class="backg">
+            <div class="hero-section">
+                    <div class="message_text ">
+                        <h2>THE STUDY OFF FLEXIBLITY <br></h2>
+                        <h4>(ALINGED WITH NEP AND NCF)</h4>
+                    </div>
+                    <div class="message-hero">
+                    <p>At Grizzly Public School, we believe in the power of flexibility to shape each student’s unique journey. Our curriculum, aligned with the National Education Policy (NEP) and the National Curriculum Framework (NCF), encourages curiosity, experiential learning, and critical thinking. Through self-created activity notebooks and innovative resources, we foster a hands-on, multidisciplinary approach that supports both academic and personal growth. Beyond academics, students explore a wide range of activities—from literary, scientific, and cultural events to sports and personality development programs. With state-of-the-art infrastructure and dedicated mentors, we empower students to become confident, purpose-driven leaders, ready to make an impact on the world.</p>
+                    </div>
+                <!-- </div> -->
+            </div>
+            </div>
+
+            <div class="about-section" id="about-us">
+                <h2><strong> ABOUT US</strong></h2>
+                <div class="message_text ">
+                    <h4>Discover Our Story: Nurturing Growth, Fostering Learning.</h4>
+                </div>
+                <div class="about">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>Empowering students to unlock potential and impact the future.</p>
+                </div>
+                <div class="about">
+                    <i class="fas fa-user-graduate"></i>
+                    <p>Focus on holistic growth: intellectual, emotional, and social.</p>
+                </div>
+                <div class="about">
+                    <i class="fas fa-school"></i>
+                    <p>State-of-the-art infrastructure and advanced study materials.</p>
+                </div>
+                <div class="about">
+                    <i class="fas fa-book-open"></i>
+                    <p>Curiosity-driven curriculum with diverse activities and programs.</p>
+                </div>
+                <div class="about">
+                    <i class="fas fa-paint-brush"></i>
+                    <p>Literary, scientific, cultural, artistic, and sports activities offered.</p>
+                </div>
+                <div class="about">
+                    <i class="fas fa-user-tie"></i>
+                    <p>Personality development fosters self-reliance, confidence, and leadership.</p>
+                </div>
+                <div class="about">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <p>Teachers act as mentors, guiding students toward excellence.</p>
+                </div>
+                <div class="about">
+                    <i class="fas fa-users"></i>
+                    <p>Nurturing individual talents and preparing leaders with integrity.</p>
+                </div>
+            </div>
+            <div class="gps-section">
+                <div class=" countainer2">
+                    <h2><strong> Grizzly Public School</strong></h2>
+                <div class="message_text ">
+                    <h4>Shaping Tomorrow's Leaders</h4>
+                </div>
+                    <div class="">
+                        <p>At Grizzly Public School, we believe "Education is life itself." Guided by the idea that "One book, one pen, one child, and one teacher can change the world," we empower students to unlock their potential and impact the future. Our innovative approach focuses on scholastic and co-scholastic development, ensuring holistic growth — intellectually, emotionally, and socially.</p><br>
+                        <p>In a short span, we have carved a unique niche with state-of-the-art infrastructure, advanced study materials, and a curriculum that sparks curiosity. Beyond academics, we offer a wide range of activities like literary, scientific, cultural, artistic, and sports events, along with personality development programs that foster self-reliance, confidence, and leadership.</p><br>
+                        <p>At Grizzly Public School, every child is treated as an individual, with a focus on nurturing diverse talents and values. Our dedicated teachers are mentors, guiding students toward excellence and preparing them to lead tomorrow with purpose and integrity.</p><br>
+                    </div>
+                </div>
+            </div>
+            
+        <!-- </div> -->
+    <!-- </section> -->
     
     
 
