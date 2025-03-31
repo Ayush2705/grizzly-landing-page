@@ -88,7 +88,7 @@
                                           children: "Nurturing individual talents and preparing leaders with integrity"
                                       })]
                                   }), (0, l.jsx)(n(), {
-                                      href: "#",
+                                      href: "./introduction.html#about-us",
                                       className: "common_btn",
                                       children: "about more"
                                   })]
