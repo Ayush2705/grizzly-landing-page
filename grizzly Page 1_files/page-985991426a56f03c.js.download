@@ -902,7 +902,7 @@
                               }), (0, l.jsx)("p", {
                                   children: e.desc
                               }), (0, l.jsx)("a", {
-                                  href: "#",
+                                  href: "mastering-skills.html",
                                   children: (0, l.jsx)("i", {
                                       className: "fas fa-long-arrow-right"
                                   })
