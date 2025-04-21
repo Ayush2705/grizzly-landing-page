@@ -36,12 +36,14 @@
         max-width: 80px; /* Set this to match the first logo's dimensions */
         height: auto; /* Maintain aspect ratio */
     }
+    
+
     body {
             font-family: "Rubik", sans-serif;
             background-color: #f9f9f9;
             /* text-align: center; */
             margin: 0;
-            padding: 0;
+            padding-top: 90px;
         }
         h1 {
             background-color: #2A63D4;
@@ -86,13 +88,47 @@
             background-color: #E65100;
         }
         
- <style>
+ 
     .download-line {
       font-weight: 600; /* makes it slightly bold */
       display: flex;
       align-items: center;
       gap: 10px;
     }
+
+    .download-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.download-section p {
+  font-size: 3rem;
+  color: #333;
+  /* margin-bottom: 15px; */
+}
+
+.download-btn {
+  background-color: #E65100;
+  color: white;
+  padding: 12px 24px;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.download-btn:hover {
+  background-color: white;
+  color: #E65100;
+  /* border: #E65100; */
+}
+
   </style>
     </style>
     <script src="./grizzly Page 1_files/page-985991426a56f03c.js.download" async=""></script>
@@ -122,20 +158,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="./../index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./../index.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="./../index.html">Categories</a></li>
+                <li class="nav-item"><a class="nav-link" href="./introduction.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="./creative_categories.html">Categories</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Your Corner</a></li>
-                <li class="nav-item"><a class="nav-link" href="./../index.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index.html#blog">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="./../index.html">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<h1> Article List </h1>
-	 <div class="download-line">
-    <p>Please click the link below to download the PDF:</p>
-    <a class = "download-link" href="../book list/GPSArticleList.pdf" download target="_blank">📄 Download PDF</a>
-  </div>    
+
+    
+    <div class="download-section">
+    <!-- <p></p> -->
+        <a href="./book list/GPSArticleList.pdf" class="download-btn" download>Click here to download the Article List</a>
+    </div>
+     
     <h1>Book List For Session (2025-26)</h1>
     <div class="container">
         <table>
