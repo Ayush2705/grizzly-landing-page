@@ -423,3 +423,107 @@ header {
     text-align: center;
   }
 }
+
+.hero-course-section {
+  font-family: "Montserrat", sans-serif !important;
+  width: 100%;
+  min-height: 10rem;
+  background: linear-gradient(135deg, #eafbf7, #edeafb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  overflow: visible;
+  position: relative;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+}
+
+.hero-content {
+  flex: 1 1 60%;
+  color: #0c1b33;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+}
+
+.hero-content a {
+  color: #0c1b33;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-content span {
+  color: #f6722b;
+}
+
+.hero-image {
+  flex: 1 1 35%;
+  position: relative;
+  /* text-align: center; */
+}
+
+.hero-image img {
+  max-width: 80%;
+  height: auto;
+  position: absolute;
+  /* right: -40%; */
+  top: -100px;
+  z-index: 10;
+
+}
+
+@media (max-width: 768px) {
+  .hero-wrapper {
+    /* flex-direction: column-reverse; */
+    text-align: left;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-course-section {
+    /* width: 100%; */
+    /* min-height: 5rem; */
+  }
+}
+
+
+/* Remove the border */
+.nav-tabs .nav-link {
+  border: none !important;
+  color: black;
+}
+
+/* Change color to orange on hover or active state */
+.nav-tabs .nav-link:hover{
+  color: #FF8146 !important; /* Change text color to orange */
+  background-color: transparent !important; /* Keep the background transparent */
+  border-color: transparent !important; /* Remove the border */
+}
+
+
+.nav-tabs .nav-link.active {
+  color: #FF8146 !important; /* Change text color to orange */
+  background-color: transparent !important; /* Keep the background transparent */
+  border-color: transparent !important; /* Remove the border */
+  text-decoration: underline !important; /* Add underline */
+  text-underline-offset: 5px;
+}
