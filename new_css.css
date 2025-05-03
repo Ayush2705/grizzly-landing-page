@@ -491,6 +491,15 @@ header {
 }
 
 @media (max-width: 768px) {
+  .hero-image img {
+    max-width: 50%;
+    height: auto;
+    position: absolute;
+    right: -2%;
+    top: -80px;
+    /* z-index: 50; */
+}
+
   .hero-wrapper {
     /* flex-direction: column-reverse; */
     text-align: left;
