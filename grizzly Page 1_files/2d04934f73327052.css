@@ -29121,14 +29121,14 @@ button {
 }
 
 /* Main logo */
-.navbar-logo {
+.navbar-logo1 {
     max-width: 120px; /* Default size for desktop */
     height: auto;
 }
 
 /* Make logo smaller for mobile */
 @media (max-width: 768px) {
-    .navbar-logo {
+    .navbar-logo1 {
         max-width: 80px; /* Adjust for smaller screens */
     }
 }
