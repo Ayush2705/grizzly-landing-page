@@ -855,10 +855,8 @@ section {
 
 
 .footer-logo img{
-    width: auto;
-    height: 160px;
-    float: left;
-    padding-bottom: 20px;
+    max-width: 130px !important;
+    /* height: auto;  */
 }
 
 .footer-section p {
