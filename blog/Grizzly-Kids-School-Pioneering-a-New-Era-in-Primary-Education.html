@@ -25,239 +25,406 @@
     <link rel="stylesheet" href="./../grizzly Page 1_files/2d04934f73327052.css" crossorigin="" data-precedence="next">    
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-
     <style>
         .logo-size {
-    max-width: 100px; /* Set this to match the first logo's dimensions */
-    height: auto; /* Maintain aspect ratio */
-    }
-    
-    .footer-logo-size {
-        max-width: 80px; /* Set this to match the first logo's dimensions */
-        height: auto; /* Maintain aspect ratio */
-    }
+            max-width: 100px;
+            height: auto;
+        }
+        
+        .footer-logo-size {
+            max-width: 80px;
+            height: auto;
+        }
 
-    @media (max-width: 991px) {
-    .navbar-nav.ms-auto {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 40px;
-        line-height: 40px;
-    }
-}
+        @media (max-width: 991px) {
+            .navbar-nav.ms-auto {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 40px;
+                line-height: 40px;
+            }
+        }
 
+        /* New Blog Layout Styles */
+        .blog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .blog-wrapper {
+            display: flex;
+            gap: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* Sidebar Styles */
+        .blog-sidebar {
+            width: 280px;
+            background-color: #f8f9fa;
+            padding: 30px 20px;
+            border-right: 1px solid #e9ecef;
+        }
+
+        .sidebar-section h3 {
+            color: #2c3e50;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 6px;
+            border-left: 3px solid #3498db;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .news-item h4 {
+            color: #2c3e50;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .news-item h4 a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .news-item h4 a:hover {
+            color: #3498db;
+        }
+
+        .news-date {
+            color: #7f8c8d;
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+
+        /* Main Content Styles */
+        .blog-main-content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .blog-header {
+            margin-bottom: 30px;
+        }
+
+        .blog-header h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .blog-subtitle {
+            color: #3498db;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .blog-author {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        .blog-date {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+
+        .social-share {
+            display: flex;
+            gap: 10px;
+            margin-left: auto;
+        }
+
+        .social-share a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .social-share .facebook { background-color: #3b5998; }
+        .social-share .instagram { background-color: #C13584; }
+        .social-share .linkedin { background-color: #0077b5; }
+
+        .blog-content {
+            color: #2c3e50;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .blog-content .blog_title {
+            color: #2c3e50;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 15px;
+            margin-top: 30px;
+            display: block;
+        }
+
+        .blog-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .blog-wrapper {
+                flex-direction: column;
+            }
+            
+            .blog-sidebar {
+                width: 100%;
+                order: 2;
+            }
+            
+            .blog-main-content {
+                padding: 20px;
+                order: 1;
+            }
+            
+            .blog-header h1 {
+                font-size: 24px;
+            }
+            
+            .blog-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .social-share {
+                margin-left: 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-container {
+                padding: 20px 10px;
+            }
+            
+            .blog-main-content {
+                padding: 15px;
+            }
+            
+            .blog-sidebar {
+                padding: 20px 15px;
+            }
+        }
     </style>
-<!-- Bootstrap Bundle with Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Bootstrap Bundle with Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
     <!-- Bootstrap Navbar -->
-<nav class="navbar navbar-expand-lg main_menu">
-    <div class="container">
-        <a class="navbar-brand" href="./../index.html">
-            <img src="./../grizzly Page 1_files/logo1.png" alt=" " class="img-fluid w-100">
-        </a>
-        <a class="navbar-brand" href="./../index.html">
-            <img src="./../grizzly Page 1_files/new_logo.PNG" alt=" " class="img-fluid w-100">
-        </a>
-        
-        <!-- Navbar Toggle Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars menu_icon"></i>
-        </button>
+    <nav class="navbar navbar-expand-lg main_menu">
+        <div class="container">
+            <a class="navbar-brand" href="./../index.html">
+                <img src="./../grizzly Page 1_files/logo1.png" alt=" " class="img-fluid w-100">
+            </a>
+            <a class="navbar-brand" href="./../index.html">
+                <img src="./../grizzly Page 1_files/new_logo.PNG" alt=" " class="img-fluid w-100">
+            </a>
+            
+            <!-- Navbar Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars menu_icon"></i>
+            </button>
 
-        <!-- Navbar Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="./../index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./../index.html">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="./../index.html">Categories</a></li>
-                <li class="nav-item"><a class="nav-link" href="../your-corner.html">Your Corner</a></li>
-                <li class="nav-item"><a class="nav-link" href="./../index.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="./../index.html">Contact</a></li>
-            </ul>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./../introduction.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./../index.html">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../your-corner.html">Your Corner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./../index.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Content -->
+    <div class="blog-container" style="margin-top: 100px;">
+        <div class="blog-wrapper">
+            <!-- Sidebar -->
+            <aside class="blog-sidebar">
+                <div class="sidebar-section">
+                    <h3>Other Blogs</h3>
+                    
+                    
+                    <div class="news-item">
+                        <div class="news-date">Jul 28, 2024</div>
+                        <h4><a href="Engaging-Minds-Through-Real-World-Learning.html">Engaging Minds Through Real-World Learning</a></h4>
+                    </div>
+                    
+                    <div class="news-item">
+                        <div class="news-date">Aug 12, 2024</div>
+                        <h4><a href="Integrating-Research-Based-Practices-in-Early-Education.html">Integrating Research-Based Practices in Early Education</a></h4>
+                    </div>
+                    
+                    <div class="news-item">
+                        <div class="news-date">Jul 22, 2024</div>
+                        <h4><a href="Nature-as-Classroom-Cultivating-Resilient,-Environmentally-Conscious-Leaders.html">Nature as Classroom: Cultivating Resilient, Environmentally Conscious Leaders</a></h4>
+                    </div>
+                    
+                    <div class="news-item">
+                        <div class="news-date">Jul 20, 2024</div>
+                        <h4><a href="The-Quiet-Revolution-Transforming-Education-Through-Mindful-Innovation.html">The Quiet Revolution: Transforming Education Through Mindful Innovation</a></h4>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="blog-main-content">
+                <div class="blog-header">
+                    <h1>Grizzly Kids School: Pioneering a New Era in Primary Education</h1>
+                    <div class="blog-subtitle">Redefining learning through innovation, holistic development, and real-world application.</div>
+                </div>
+
+                <div class="blog-meta">
+                    <span class="blog-author">Written by Grizzly Kids School</span>
+                    <span class="blog-date">Jul 25, 2024</span>
+                    <div class="social-share">
+                        <a href="https://www.facebook.com/GrizzlyKidsJMT" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/grizzlykids_/" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/grizzlyvidyalaya/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-content">
+                    <p><span class="blog_title">Grizzly Kids School: Pioneering a New Era in Primary Education</span>
+                        In an educational landscape often characterized by standardization and testing-focused curricula, Grizzly Kids School stands as a remarkable exception. For over fifteen years, this innovative institution has redefined excellence in primary education through its unique approach that balances academic rigor with creative exploration, emotional intelligence, and real-world application. The school's outstanding achievements have not only transformed the educational journeys of countless students but have also influenced teaching methodologies across the region.
+                    </p>
+                    
+                    <p><span class="blog_title">A Vision Realized Through Exceptional Leadership</span>
+                    The extraordinary success of Grizzly Kids School can be traced back to its visionary founding team led by Dr. Eleanor Martinez, whose educational philosophy emerged from decades of research in developmental psychology and progressive education. After observing the limitations of conventional schooling during her tenure at prestigious research universities, Dr. Martinez assembled a team of forward-thinking educators committed to creating an environment where children could develop holistically. "We recognized that traditional education often sacrifices curiosity at the altar of standardization," notes Dr. Martinez. "At Grizzly, we've created a model that nurtures children's natural inquisitiveness while ensuring they master essential skills and knowledge." This founding vision has been brilliantly executed under the leadership of Principal Dr. Samuel Richardson, whose background in both educational innovation and organizational management has transformed theoretical ideals into practical excellence. His collaborative approach to school governance has empowered teachers to become educational researchers in their own classrooms, continuously refining methodologies based on student outcomes.</p>
+                    
+
+                    <p><span class="blog_title">Academic Excellence Reimagined</span>
+                        While many progressive schools are criticized for potentially sacrificing academic fundamentals, Grizzly Kids School has demonstrated that innovation and excellence are complementary rather than contradictory goals. The school consistently produces students who perform exceptionally well on standardized assessments while demonstrating capabilities that extend far beyond what tests can measure. The school's integrated curriculum deserves particular recognition for its effectiveness. Rather than teaching subjects in isolation, Grizzly's teachers create thematic units that connect mathematical concepts with scientific principles, historical contexts, and artistic expression. This approach develops students' ability to transfer knowledge across domains—a skill increasingly vital in our complex world. Mathematics instruction at Grizzly exemplifies this integrated approach. Students don't merely memorize algorithms; they explore mathematical principles through architectural design projects, community surveys, and environmental studies. This methodology has yielded remarkable results, with Grizzly students demonstrating 40% higher performance on applied mathematics assessments compared to district averages. The language arts program similarly merits commendation for its balanced approach combining systematic phonics instruction with rich literature exploration. By second grade, 97% of Grizzly students read at or above grade level, with most demonstrating exceptional comprehension and analytical abilities when discussing complex texts. </p>
+                    
+                    <p><span class="blog_title">Cultivating Tomorrow's Innovators</span>
+                        Perhaps Grizzly Kids School's most significant contribution to educational excellence lies in its cultivation of the critical competencies future leaders will require. The school's Innovation Lab provides a specialized environment where students develop design thinking, computational logic, and creative problem-solving skills through guided exploration and student-initiated projects. Under the expert guidance of technology integration specialist Dr. Priya Sharma, the Innovation Lab has become a model studied by educators worldwide. Unlike traditional computer labs focused on software training, Grizzly's approach emphasizes technological fluency as a means of creative expression and problem-solving. "We're not teaching technology for its own sake," explains Dr. Sharma. "We're helping children develop the mindset and capabilities to use technological tools thoughtfully and ethically to address meaningful challenges." This approach has yielded exceptional outcomes. Grizzly alumni consistently demonstrate sophisticated digital literacy, computational thinking, and technological ethics when they transition to secondary schools. Many have gone on to win regional and national recognition for innovative solutions to environmental and social challenges.</p>
+                    
+                    <p><span class="blog_title">A Model of Educational Excellence</span>
+                         The exceptional qualities of Grizzly Kids School become most apparent when visiting classrooms. Unlike the rigid atmosphere found in many achievement-focused schools, Grizzly's learning spaces buzz with engaged conversation, collaborative problem-solving, and joyful discovery. Teachers function as guides rather than lecturers, asking thought-provoking questions and creating conditions for genuine exploration. The physical environment itself reflects the school's educational philosophy. Flexible seating arrangements accommodate different learning preferences, while specialized zones for quiet reflection, artistic creation, scientific investigation, and collaborative work ensure that diverse learning needs are supported. Natural materials, abundant plants, and large windows create a connection to the natural world that enhances wellbeing and cognitive function. Specialist programs further distinguish Grizzly's comprehensive approach to child development. The school's performing arts curriculum has received national recognition for integrating musical training, dramatic expression, and movement education in ways that develop both technical proficiency and creative voice. Similarly, the visual arts program guides students through systematic exploration of diverse media while encouraging personal expression and cultural understanding.</p>
+                    
+                    <p><span class="blog_title">Supporting the Whole Child</span>
+                        Grizzly Kids School's exceptional attention to social-emotional development represents another area of distinction. The school's counseling team, led by child psychologist Dr. Marcus Wong, has developed a comprehensive wellbeing curriculum that provides students with the emotional vocabulary, self-regulation strategies, and interpersonal skills essential for balanced development. "Academic learning and emotional development aren't separate domains—they're fundamentally interconnected," notes Dr. Wong. "When children feel emotionally secure and possess the skills to navigate social relationships effectively, their capacity for intellectual engagement expands tremendously." This integrated approach to student wellbeing has created a remarkably positive school culture characterized by supportive peer relationships, effective conflict resolution, and genuine inclusivity. Visitors consistently comment on the exceptional emotional intelligence demonstrated by Grizzly students across age groups. The school's commitment to diversity and inclusion deserves particular recognition. Beyond superficial celebrations of cultural differences, Grizzly has implemented structural approaches that ensure all students experience genuine belonging and equitable opportunities. The school's socioeconomically diverse student population benefits from differentiated support systems that address individual needs while maintaining high expectations for all learners.</p>
+                   
+                        <p><span class="blog_title">Community Engagement and Global Citizenship</span>
+                        Grizzly Kids School has extended its educational impact beyond campus boundaries through exemplary community partnerships. Students at every grade level participate in service-learning initiatives that connect academic content with community needs, developing both civic responsibility and practical application of classroom learning. The school's Environmental Stewardship Program represents a particularly successful community initiative. Working with local conservation organizations, students have contributed to watershed restoration projects, conducted biodiversity surveys, and implemented sustainable gardening practices that have become models for other schools and community groups. This local engagement complements the school's global citizenship curriculum, which helps students develop nuanced understanding of international issues and cross-cultural perspectives. Through carefully structured partnerships with schools in six countries, Grizzly students engage in collaborative projects addressing shared environmental and social challenges.</p>
+                    
+                        
+                        <p><span class="blog_title">Professional Development as Institutional Priority</span>
+                        A key factor in Grizzly Kids School's sustained excellence is its exceptional commitment to teacher development. Unlike the sporadic workshop model common in many schools, Grizzly has implemented a comprehensive growth system that includes weekly collaborative planning, personalized coaching cycles, action research initiatives, and partnerships with educational researchers. Master teacher Jennifer Ramirez explains the impact of this approach: "The professional culture at Grizzly recognizes teaching as both an art and a science. We're constantly refining our practice based on student responses and emerging research, but within a supportive community that celebrates innovation and thoughtful risk-taking." This culture of continuous improvement extends to all areas of school operations. Administrators regularly solicit feedback from parents, students, and teachers, using this information to refine programs and practices. This responsiveness has contributed to the school's remarkable 97% parent satisfaction rating and exceptional teacher retention compared to.</p>
+                    
+                        
+                </div>
+            </main>
         </div>
     </div>
-</nav>
 
+    <!-- Footer -->
+    <footer class="tf__footer mt_100">
+        <div class="tf__footer_overlay pt_75">
+            <div class="container">
+                <div class="row justify-content-between g-4">
+                    <div class="col-xl-3 col-sm-10 col-md-7 col-lg-6">
+                        <div class="tf__footer_logo_area"><a class="footer-logo"
+                                href="./../index.html"><img
+                                    src="./../grizzly Page 1_files/logo.png" alt="logo"
+                                    class="img-fluid"></a>
+                                    <a class="footer-logo"
+                                    href="./../index.html"><img
+                                        src="./../grizzly Page 1_files/new_logo.PNG" alt="logo"
+                                        class="img-fluid"></a>
 
-
-
-    <!-- two sided blog part starts -->
-    <div class="container-fluid ">
-        <div class="row ">
-            <!-- to get the space form left and right -->
-                    <!-- left side of the blog  -->
-                    <div class="blog-align">
-                        <div class="row gy-5 ">
-                            <div class="col-12 card p-4 shadow blog_left__div">
-                                <div class="d-flex justify-content-center align-items-center flex-column pt-3  ">
-                                    <h1 class="text-uppercase">Grizzly Kids School: Pioneering a New Era in Primary Education</h1>
-                                    <p class=""> <span class="h3">Redefining learning through innovation, holistic development, and real-world application.</span> </p>
-                                </div>
-                                <!-- <p class="blog_title"> Beyond the club gates lies the vibrant town of Jhumri Telaiya—a microcosm of Jharkhand's soul. Here's what awaits you</p> -->
-                                <p class="font-weight-bold"><span class="blog_title">Grizzly Kids School: Pioneering a New Era in Primary Education</span>
-                                    In an educational landscape often characterized by standardization and testing-focused curricula, Grizzly Kids School stands as a remarkable exception. For over fifteen years, this innovative institution has redefined excellence in primary education through its unique approach that balances academic rigor with creative exploration, emotional intelligence, and real-world application. The school's outstanding achievements have not only transformed the educational journeys of countless students but have also influenced teaching methodologies across the region.
-                                </p>
-                                <p class="font-weight-bold"><span class="blog_title">A Vision Realized Through Exceptional Leadership</span>
-                                    The extraordinary success of Grizzly Kids School can be traced back to its visionary founding team led by Dr. Eleanor Martinez, whose educational philosophy emerged from decades of research in developmental psychology and progressive education. After observing the limitations of conventional schooling during her tenure at prestigious research universities, Dr. Martinez assembled a team of forward-thinking educators committed to creating an environment where children could develop holistically.
-
-"We recognized that traditional education often sacrifices curiosity at the altar of standardization," notes Dr. Martinez. "At Grizzly, we've created a model that nurtures children's natural inquisitiveness while ensuring they master essential skills and knowledge."
-
-This founding vision has been brilliantly executed under the leadership of Principal Dr. Samuel Richardson, whose background in both educational innovation and organizational management has transformed theoretical ideals into practical excellence. His collaborative approach to school governance has empowered teachers to become educational researchers in their own classrooms, continuously refining methodologies based on student outcomes.
-                                </p>
-                                <p class="font-weight-bold"><span class="blog_title">Academic Excellence Reimagined</span>
-                                    While many progressive schools are criticized for potentially sacrificing academic fundamentals, Grizzly Kids School has demonstrated that innovation and excellence are complementary rather than contradictory goals. The school consistently produces students who perform exceptionally well on standardized assessments while demonstrating capabilities that extend far beyond what tests can measure.
-
-The school's integrated curriculum deserves particular recognition for its effectiveness. Rather than teaching subjects in isolation, Grizzly's teachers create thematic units that connect mathematical concepts with scientific principles, historical contexts, and artistic expression. This approach develops students' ability to transfer knowledge across domains—a skill increasingly vital in our complex world.
-
-Mathematics instruction at Grizzly exemplifies this integrated approach. Students don't merely memorize algorithms; they explore mathematical principles through architectural design projects, community surveys, and environmental studies. This methodology has yielded remarkable results, with Grizzly students demonstrating 40% higher performance on applied mathematics assessments compared to district averages.
-
-The language arts program similarly merits commendation for its balanced approach combining systematic phonics instruction with rich literature exploration. By second grade, 97% of Grizzly students read at or above grade level, with most demonstrating exceptional comprehension and analytical abilities when discussing complex texts.
-                                </p>
-                                <p class="font-weight-bold"><span class="blog_title">Cultivating Tomorrow's Innovators</span>
-                                    Perhaps Grizzly Kids School's most significant contribution to educational excellence lies in its cultivation of the critical competencies future leaders will require. The school's Innovation Lab provides a specialized environment where students develop design thinking, computational logic, and creative problem-solving skills through guided exploration and student-initiated projects.
-
-Under the expert guidance of technology integration specialist Dr. Priya Sharma, the Innovation Lab has become a model studied by educators worldwide. Unlike traditional computer labs focused on software training, Grizzly's approach emphasizes technological fluency as a means of creative expression and problem-solving.
-
-"We're not teaching technology for its own sake," explains Dr. Sharma. "We're helping children develop the mindset and capabilities to use technological tools thoughtfully and ethically to address meaningful challenges."
-
-This approach has yielded exceptional outcomes. Grizzly alumni consistently demonstrate sophisticated digital literacy, computational thinking, and technological ethics when they transition to secondary schools. Many have gone on to win regional and national recognition for innovative solutions to environmental and social challenges.
-                                </p>
-                                <p class="font-weight-bold"><span class="blog_title">A Model of Educational Excellence</span>
-                                    The exceptional qualities of Grizzly Kids School become most apparent when visiting classrooms. Unlike the rigid atmosphere found in many achievement-focused schools, Grizzly's learning spaces buzz with engaged conversation, collaborative problem-solving, and joyful discovery. Teachers function as guides rather than lecturers, asking thought-provoking questions and creating conditions for genuine exploration.
-
-The physical environment itself reflects the school's educational philosophy. Flexible seating arrangements accommodate different learning preferences, while specialized zones for quiet reflection, artistic creation, scientific investigation, and collaborative work ensure that diverse learning needs are supported. Natural materials, abundant plants, and large windows create a connection to the natural world that enhances wellbeing and cognitive function.
-
-Specialist programs further distinguish Grizzly's comprehensive approach to child development. The school's performing arts curriculum has received national recognition for integrating musical training, dramatic expression, and movement education in ways that develop both technical proficiency and creative voice. Similarly, the visual arts program guides students through systematic exploration of diverse media while encouraging personal expression and cultural understanding.
-                                </p>
-                                <p class="font-weight-bold"><span class="blog_title">Supporting the Whole Child</span>
-                                    Grizzly Kids School's exceptional attention to social-emotional development represents another area of distinction. The school's counseling team, led by child psychologist Dr. Marcus Wong, has developed a comprehensive wellbeing curriculum that provides students with the emotional vocabulary, self-regulation strategies, and interpersonal skills essential for balanced development.
-
-"Academic learning and emotional development aren't separate domains—they're fundamentally interconnected," notes Dr. Wong. "When children feel emotionally secure and possess the skills to navigate social relationships effectively, their capacity for intellectual engagement expands tremendously."
-
-This integrated approach to student wellbeing has created a remarkably positive school culture characterized by supportive peer relationships, effective conflict resolution, and genuine inclusivity. Visitors consistently comment on the exceptional emotional intelligence demonstrated by Grizzly students across age groups.
-
-The school's commitment to diversity and inclusion deserves particular recognition. Beyond superficial celebrations of cultural differences, Grizzly has implemented structural approaches that ensure all students experience genuine belonging and equitable opportunities. The school's socioeconomically diverse student population benefits from differentiated support systems that address individual needs while maintaining high expectations for all learners.
-                                </p>
-                                <p class="font-weight-bold"><span class="blog_title">Community Engagement and Global Citizenship</span>
-                                    Grizzly Kids School has extended its educational impact beyond campus boundaries through exemplary community partnerships. Students at every grade level participate in service-learning initiatives that connect academic content with community needs, developing both civic responsibility and practical application of classroom learning.
-
-The school's Environmental Stewardship Program represents a particularly successful community initiative. Working with local conservation organizations, students have contributed to watershed restoration projects, conducted biodiversity surveys, and implemented sustainable gardening practices that have become models for other schools and community groups.
-
-This local engagement complements the school's global citizenship curriculum, which helps students develop nuanced understanding of international issues and cross-cultural perspectives. Through carefully structured partnerships with schools in six countries, Grizzly students engage in collaborative projects addressing shared environmental and social challenges.
-                                </p>
-                                <p class="font-weight-bold"><span class="blog_title">Professional Development as Institutional Priority</span>
-                                    A key factor in Grizzly Kids School's sustained excellence is its exceptional commitment to teacher development. Unlike the sporadic workshop model common in many schools, Grizzly has implemented a comprehensive growth system that includes weekly collaborative planning, personalized coaching cycles, action research initiatives, and partnerships with educational researchers.
-
-Master teacher Jennifer Ramirez explains the impact of this approach: "The professional culture at Grizzly recognizes teaching as both an art and a science. We're constantly refining our practice based on student responses and emerging research, but within a supportive community that celebrates innovation and thoughtful risk-taking."
-
-This culture of continuous improvement extends to all areas of school operations. Administrators regularly solicit feedback from parents, students, and teachers, using this information to refine programs and practices. This responsiveness has contributed to the school's remarkable 97% parent satisfaction rating and exceptional teacher retention compared to 
-                                </p>
-                            </div>
+                            <p></p>
+                            <ul class="d-flex flex-wrap">
+                                <li><a href="https://www.facebook.com/GrizzlyKidsJMT"><i
+                                            class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="https://wa.me/9102990117/"><i
+                                            class="fab fa-whatsapp"></i></a></li>
+                                <li><a href="https://www.instagram.com/grizzlykids_/"><i
+                                            class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/grizzlyvidyalaya/"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://www.youtube.com/@GrizzlyKidsJMT/videos"><i
+                                            class="fab fa-youtube"></i></a></li>
+                            </ul>
                         </div>
                     </div>
-        </div>
-    </div>                            
-
-<!-- blog end -->
-
-<!-- =========== Footer section start Here========== -->
-<footer class="tf__footer mt_100">
-    <div class="tf__footer_overlay pt_75">
-        <div class="container">
-            <div class="row justify-content-between g-4"> 
-                <div class="col-xl-3 col-sm-10 col-md-7 col-lg-6">
-                    <div class="tf__footer_logo_area"><a class="footer-logo"
-                            href="./../index.html"><img
-                                src="./../grizzly Page 1_files/logo.png" alt="logo"
-                                class="img-fluid w-100"></a>
-                                <a class="footer-logo"
-                                href="./../index.html"><img
-                                    src="./../grizzly Page 1_files/new_logo.PNG" alt="logo"
-                                    class="img-fluid w-75"></a>
-
-                        <p></p>
-                        <ul class="d-flex flex-wrap">
-                            <li><a href="https://www.facebook.com/GrizzlyKidsJMT"><i
-                                        class="fa fa-facebook-f"></i></a></li>
-                            <li><a href="https://wa.me/9102990117/"><i
-                                        class="fab fa-whatsapp"></i></a></li>
-                            <li><a href="https://www.instagram.com/grizzlykids_/"><i
-                                        class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/grizzlyvidyalaya/"><i
-                                        class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="https://www.youtube.com/@GrizzlyKidsJMT/videos"><i
-                                        class="fab fa-youtube"></i></a></li>
-                        </ul>
+                    <div class="col-xl-3 col-sm-10 col-md-7 col-lg-col-lg-6">
+                        <div class="tf__footer_content xs_mt_30">
+                            <h3>Our Contacts</h3>
+                            <p>Near Grizzly College of Education, Satpulia, Gumo, Jhumri Telaiya, Koderma-825409 (Jharkhand)</p>
+                            <p><span> Phone: <a href="tel: +91-7070098751">+91-7070098751, </a></span>
+                                <span><a href="tel: +91-9102990117">+91-9102990117</a></span></p>
+                            <p><span>Email: <a href="mailto:%20grizzlypublic@gmail.com,">grizzlypublic@gmail.com</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-sm-10 col-md-5 col-lg-4 col-lg-5">
+                        <div class="tf__footer_content xs_mt_45">
+                            <h3>News Letter</h3>
+                            <form><input type="text" placeholder="Your Email"><button>send</button></form>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="col-xl-2 col-sm-10 col-md-5 col-lg-5">
-                    <div class="tf__footer_content xs_mt_50">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="#">Best Services</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">About Our Company</a></li>
-                            <li><a href="#">Business Contact</a></li>
-                            <li><a href="#">Make An Appointment</a></li>
-                        </ul>
-                    </div>
-                </div> -->
-                <div class="col-xl-3 col-sm-10 col-md-7 col-lg-col-lg-6">
-                    <div class="tf__footer_content xs_mt_30">
-                        <h3>Our Contacts</h3>
-                        <p>Near Grizzly College of Education, Satpulia, Gumo, Jhumri Telaiya, Koderma-825409 (Jharkhand)</p>
-                        <p><span> Phone: <a href="tel: +91-7070098751">+91-7070098751, </a></span>
-                            <span><a href="tel: +91-9102990117">+91-9102990117</a></span></p>
-                        <p><span>Email: <a href="mailto:%20grizzlypublic@gmail.com,">grizzlypublic@gmail.com</a>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-10 col-md-5 col-lg-4 col-lg-5">
-                    <div class="tf__footer_content xs_mt_45">
-                        <h3>News Letter</h3>
-                        <form><input type="text" placeholder="Your Email"><button>send</button></form>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="tf__copyright">
-                        <p>Copyright ©Grizzly Public School all rights reserved.</p>
-                        <ul class="d-flex flex-wrap">
-                            <li><a href="https://zarvis.in/">Developed With ❤️ By : Zarvis.in</a></li>
-                        </ul>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tf__copyright">
+                            <p>Copyright ©Grizzly Public School all rights reserved.</p>
+                            <ul class="d-flex flex-wrap">
+                                <li><a href="https://zarvis.in/">Developed With ❤️ By : Zarvis.in</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- =========== Footer section Ends Here========== -->
+    </footer>
 
-
-
-
-      
-    
     <!-- Add Bootstrap JS and Popper.js scripts at the end of the body -->
     <script src="https://kit.fontawesome.com/527ee7a51c.js" crossorigin="anonymous"></script>
-  
-
 </body>
 
-
-
-
-
-        
-        
+</html>
