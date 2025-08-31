@@ -657,6 +657,17 @@
                                   ]
                               }),
 
+                              (0, l.jsxs)("li", {
+                                  className: "nav-item",
+                                  children: [
+                                      (0, l.jsxs)("a", {
+                                          className: "nav-link",
+                                          href: "./news.html",
+                                          children: "News"
+                                      })
+                                  ]
+                              }),
+
                               (0, l.jsx)("li", {
                                   className: "nav-item",
                                   children: (0, l.jsx)("a", {
