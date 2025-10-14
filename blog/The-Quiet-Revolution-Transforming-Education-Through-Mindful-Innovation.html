@@ -243,6 +243,115 @@
                 padding: 20px 15px;
             }
         }
+        /* Floating Button */
+#queryButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 140px;
+  height: 50px;
+  background-color: #FF7F46;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+#queryButton:hover {
+  background-color: #e76f3c;
+}
+
+/* Popup Form Container */
+#popupFormContainer {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+}
+
+/* Popup Form Box */
+.popupForm {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close Button */
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  color: #555;
+  cursor: pointer;
+}
+.closeBtn:hover {
+  color: #000;
+}
+
+/* Form Styles */
+.popupForm h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0745c0;
+  font-weight: 600;
+}
+
+.popupForm label {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #333;
+}
+
+.popupForm input,
+.popupForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.submitBtn {
+  width: 100%;
+  margin-top: 20px;
+  background: #0745c0;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.submitBtn:hover {
+  background: #052f86;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
     </style>
 
     <!-- Bootstrap Bundle with Popper.js -->
@@ -273,6 +382,7 @@
                     <li class="nav-item"><a class="nav-link" href="./../index.html">Categories</a></li>
                     <li class="nav-item"><a class="nav-link" href="../your-corner.html">Your Corner</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../news.html">News</a></li>
                     <li class="nav-item"><a class="nav-link" href="./../index.html">Contact</a></li>
                 </ul>
             </div>
@@ -409,7 +519,7 @@
                             <p>Near Grizzly College of Education, Satpulia, Gumo, Jhumri Telaiya, Koderma-825409 (Jharkhand)</p>
                             <p><span> Phone: <a href="tel: +91-7070098751">+91-7070098751, </a></span>
                                 <span><a href="tel: +91-9102990117">+91-9102990117</a></span></p>
-                            <p><span>Email: <a href="mailto:%20grizzlypublic@gmail.com,">grizzlypublic@gmail.com</a>
+                            <p><span>Email: <a href="mailto:%20grizzlypublic@gmail.com">grizzlypublic@gmail.com</a>
                                 </span>
                             </p>
                         </div>
@@ -434,6 +544,45 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- Floating Enquire Now Button -->
+<button id="queryButton">Enquire Now</button>
+
+<!-- Popup Form Container -->
+<div id="popupFormContainer">
+  <div class="popupForm">
+    <span class="closeBtn" onclick="closeForm()">&times;</span>
+    <h2>Enquiry Form</h2>
+    <form id="enquiryForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Your enquiry..." rows="4"></textarea>
+
+      <button type="submit" class="submitBtn">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  // Open popup
+  document.getElementById("queryButton").addEventListener("click", function () {
+    document.getElementById("popupFormContainer").style.display = "flex";
+  });
+
+  // Close popup
+  function closeForm() {
+    document.getElementById("popupFormContainer").style.display = "none";
+  }
+</script>
 
     <!-- Add Bootstrap JS and Popper.js scripts at the end of the body -->
     <script src="https://kit.fontawesome.com/527ee7a51c.js" crossorigin="anonymous"></script>
