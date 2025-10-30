@@ -651,7 +651,7 @@
                                   children: [
                                       (0, l.jsxs)("a", {
                                           className: "nav-link",
-                                          href: "#blog",
+                                          href: "./blogs.html",
                                           children: "Blog"
                                       })
                                   ]
