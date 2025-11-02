@@ -733,7 +733,7 @@
                           className: "tf__single_blog",
                           children: [(0, l.jsx)(n(), {
                               className: "tf__single_blog_img",
-                              href: "/blog/".concat(e.slug),
+                              href: "/".concat(e.slug),
                               children: (0, l.jsx)("img", {
                                   src: e.imgSrc.image,
                                   alt: e.imgSrc.alt,
@@ -743,17 +743,17 @@
                               className: "tf__single_blog_text",
                               children: [(0, l.jsx)(n(), {
                                   className: "category ".concat(e.color),
-                                  href: "/blog/".concat(e.slug),
+                                  href: "/".concat(e.slug),
                                   children: e.category
                               }), (0, l.jsx)(n(), {
                                   className: "title",
-                                  href: "/blog/".concat(e.slug),
+                                  href: "/".concat(e.slug),
                                   children: e.title
                               }), (0, l.jsx)("p", {
                                   children: e.desc
                               }), (0, l.jsxs)(n(), {
                                   className: "read_btn",
-                                  href: "/blog/".concat(e.slug),
+                                  href: "/".concat(e.slug),
                                   children: ["Read More ", (0, l.jsx)("i", {
                                       className: "fas fa-chevron-circle-right"
                                   })]
