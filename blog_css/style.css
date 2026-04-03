@@ -277,6 +277,19 @@ nav.main-menu ul li a {
     max-height: 60px;
 }
 
+/* ---- Responsive navbar for laptop screens (992px–1400px) ---- */
+@media (min-width: 992px) and (max-width: 1400px) {
+    .main_menu .navbar-brand img {
+        max-width: 110px;
+        max-height: 48px;
+    }
+    .main_menu .navbar-nav .nav-link {
+        font-size: 13px;
+        padding-left: 0.35rem;
+        padding-right: 0.35rem;
+    }
+}
+
 nav.main-menu ul li a.book-btn {
     background: #FFA500;
     border-radius: 5px;
