@@ -541,9 +541,28 @@
                           position: "ms-auto",
                           btnPosition: !1,
                           navRef: u
-                      })]
+                      }),(0, l.jsx)("style", {
+    jsx: true,
+    children: `
+@media (min-width: 992px) and (max-width: 1400px) {
+    .main_menu .navbar-brand img {
+        max-width: 100px;   /* was 190px */
+        max-height: 48px;   /* was 60px */
+    }
+    .main_menu .navbar-nav .nav-link {
+        font-size: 12px;        /* tighter than default ~16px */
+        padding-left: 0.3rem;  /* already 0.5rem from Bootstrap */
+        padding-right: 0.3rem;
+    }
+}
+`
+})
+
+
+                      ]
                   })
               })
+              
           }
       },
       50103: function(e, s, i) {
@@ -642,6 +661,17 @@
                                           className: "nav-link",
                                           href: "./your-corner.html",
                                           children: "Your Corner"
+                                      })
+                                  ]
+                              }),
+
+                              (0, l.jsxs)("li", {
+                                  className: "nav-item",
+                                  children: [
+                                      (0, l.jsx)("a", {
+                                          className: "nav-link",
+                                          href: "./disclosure.html",
+                                          children: "Disclosure"
                                       })
                                   ]
                               }),
