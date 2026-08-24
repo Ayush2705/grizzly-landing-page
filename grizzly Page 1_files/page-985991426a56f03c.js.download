@@ -35,7 +35,7 @@
                                   children: (0, l.jsx)("div", {
                                       className: "tf__about_top_img",
                                       children: (0, l.jsx)("img", {
-                                          src: "./grizzly Page 1_files/about_top_img.jpg",
+                                          src: "./grizzly Page 1_files/about_top_img.png",
                                           alt: "about",
                                           className: "img-fluid w-100"
                                       })
