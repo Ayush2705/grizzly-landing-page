@@ -152,7 +152,7 @@
                                           children: "Becomes"
                                       }), " Adventure!"]
                                   }), (0, l.jsx)("p", {
-                                      children: "At Grizzly kids a unit of grizzly public school, learning is not just a process — it’s an adventure. Guided by the belief that ''Education is life itself,'' we create a dynamic environment where curiosity, creativity, and exploration thrive. Our state-of-the-art infrastructure and innovative tools transform every lesson into an exciting journey "
+                                      children: "Grizzly public school, learning is not just a process — it’s an adventure. Guided by the belief that ''Education is life itself,'' we create a dynamic environment where curiosity, creativity, and exploration thrive. Our state-of-the-art infrastructure and innovative tools transform every lesson into an exciting journey "
                                   }), (0, l.jsxs)("ul", {
                                       className: "d-flex flex-wrap align-items-center",
                                       children: [(0, l.jsx)("li", {
