@@ -516,11 +516,7 @@
                               alt: "Eduor",
                               className: "img-fluid navbar-logo"
                           })
-                      }),(0, l.jsx)("img", {  
-            src: "new_logo.png",  // Replace with the actual path of the second logo
-            alt: "Grizzly",
-            className: "img-fluid navbar-logo1 logo-size ms-3" // Adds spacing between the images
-        }),
+                      }),
                        d ? (0, l.jsx)("button", {
                           className: "navbar-toggler",
                           type: "button",
