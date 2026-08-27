@@ -105,14 +105,7 @@
                                       className: "text counter-box",
                                       children: [(0, l.jsx)("i", {
                                           className: "far fa-check-circle"
-                                      }), (0, l.jsx)("h3", {
-                                          children: e && (0, l.jsx)(r.ZP, {
-                                              start: 1,
-                                              end: 183,
-                                              duration: 5,
-                                              formattingFn: e => "".concat(e, "K+")
-                                          })
-                                      }), (0, l.jsx)("h4", {
+                                      }),  (0, l.jsx)("h4", {
                                         className: "",
                                           children: "Students"
                                       })]
