@@ -4,6 +4,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <link rel="preload" as="image" href="./grizzly Page 1_files/logo.png">
     <link rel="preload" as="image" href="./grizzly Page 1_files/about_top_img.png">
     <link rel="preload" as="image" href="./grizzly Page 1_files/about_img.png">
@@ -119,6 +121,7 @@
     src="https://www.facebook.com/tr?id=25125532900378607&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
+    <link rel="stylesheet" href="navbar-dropdown.css">
 </head>
 
 <body cz-shortcut-listen="true"><!--$-->
@@ -133,7 +136,12 @@
                     <li class="nav-item"><a class="nav-link" href="./introduction.html">Introduction</a></li>
                     <li class="nav-item"><a class="nav-link " href="#aboutus">about us</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#categories">Categories <i class="fa"></i></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./creative_categories.html">Creative Categories</a></li>
+                            <li><a class="dropdown-item" href="./mastering_skills.html">Mastering Skills</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link " href="./your-corner.html">Your Corner</a>
                     </li>
@@ -1611,6 +1619,40 @@
                 style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;">
             </div>
         </template></next-route-announcer>
+    <script>
+        const enhanceCategoriesMenu = () => {
+            document.querySelectorAll('nav .nav-item').forEach((item) => {
+                const categoryLink = Array.from(item.children).find(
+                    (child) => child.matches('a') && child.textContent.trim() === 'Categories'
+                );
+
+                if (!categoryLink || item.querySelector('.dropdown-menu')) {
+                    return;
+                }
+
+                categoryLink.classList.add('dropdown-toggle');
+                categoryLink.setAttribute('role', 'button');
+                categoryLink.setAttribute('data-bs-toggle', 'dropdown');
+                categoryLink.setAttribute('aria-expanded', 'false');
+                categoryLink.setAttribute('href', '#');
+                item.classList.add('dropdown');
+
+                const menu = document.createElement('ul');
+                menu.className = 'dropdown-menu';
+                menu.innerHTML = `
+                    <li><a class="dropdown-item" href="./creative_categories.html">Creative Categories</a></li>
+                    <li><a class="dropdown-item" href="./mastering_skills.html">Mastering Skills</a></li>
+                `;
+                item.appendChild(menu);
+            });
+        };
+
+        enhanceCategoriesMenu();
+        new MutationObserver(enhanceCategoriesMenu).observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    </script>
 </body>
 
 </html>
