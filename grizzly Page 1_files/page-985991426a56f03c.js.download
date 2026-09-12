@@ -846,13 +846,6 @@
                           }), (0, l.jsx)("p", {
                               className: "description",
                               children: e.desc
-                          }), (0, l.jsx)("div", {
-                              className: "img",
-                              children: (0, l.jsx)("img", {
-                                  src: e.imgSrc.image,
-                                  alt: "client",
-                                  className: "img-f;uid w-100"
-                              })
                           }), (0, l.jsx)("h3", {
                               className: "title",
                               children: e.name

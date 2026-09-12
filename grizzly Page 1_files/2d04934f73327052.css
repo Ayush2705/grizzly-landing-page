@@ -30534,6 +30534,7 @@ button {
 }
 
 .tf__single_testimonial .title {
+    margin-top: 20px;
     font-size: 22px;
     font-weight: 700
 }
