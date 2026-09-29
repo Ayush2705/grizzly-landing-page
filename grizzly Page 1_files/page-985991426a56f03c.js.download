@@ -1034,7 +1034,7 @@
         },
         children: [
             { platform: "Facebook", url: "https://www.facebook.com/GrizzlyKidsJMT", icon: "<i class='fab fa-facebook-f'></i>", color: "#1877F2" },
-            { platform: "WhatsApp", url: "https://wa.me/9102990117/", icon: "<i class='fab fa-whatsapp'></i>", color: "#25D366" },
+            { platform: "WhatsApp", url: "https://wa.me/9102990116/", icon: "<i class='fab fa-whatsapp'></i>", color: "#25D366" },
             { platform: "Instagram", url: "https://www.instagram.com/grizzlykids_/", icon: "<i class='fab fa-instagram'></i>", color: "#C13584" },
             { platform: "LinkedIn", url: "https://www.linkedin.com/company/grizzlyvidyalaya/", icon: "<i class='fab fa-linkedin-in'></i>", color: "#0077B5" }
         ].map((social) =>
